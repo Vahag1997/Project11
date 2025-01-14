@@ -1,5 +1,4 @@
-"use client"
-import { useEffect } from 'react';
+"use client";
 import { Flex, Input, IconButton } from '@chakra-ui/react';
 import { InputGroup } from '../ui/input-group';
 import Image from 'next/image';
@@ -8,8 +7,12 @@ import { FaRegHeart } from "react-icons/fa";
 import { IoSearch, IoBagOutline } from "react-icons/io5";
 import { RxAvatar } from "react-icons/rx";
 import { SelectFlag, SelectCurrency, HeaderCarousel } from '.';
-import { HOMEPAGESLIDES } from '../constants/constants';
-import { usePathname } from 'next/navigation'
+// import dynamic from 'next/dynamic';
+
+
+// const HeaderCarousel = dynamic(() => import('./HeaderCarousel'), {
+//     ssr: false,
+//   });
 
 export default function Header() {
  
@@ -36,7 +39,7 @@ export default function Header() {
                     </Flex>
                 </Flex>
             </Flex>
-            <HeaderCarousel slides={HOMEPAGESLIDES} />
+            <HeaderCarousel/>
         </>
     );
 }

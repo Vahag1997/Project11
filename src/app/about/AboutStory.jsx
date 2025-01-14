@@ -28,7 +28,6 @@ const AboutStory = () => {
                     <Image
                         src={"https://s3-alpha-sig.figma.com/img/5a20/6df7/6ce6fdffc93a7a606c2131c069c8200e?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Af8IcXT7DubpJNEAsAY0Z0p19gHdEWhgZVAugBscaRk74wVKzxjT3uWs2wbTR8MlUugRo8xPv1oiXU54oA2rJzD0M1jN4mGEoLavJjpiYciEjBOSF6wRlGL8~E1Z2VaEmCHCI5-f0DXxi-m6zHnjEEuStAfAQ2PqFwP1vSZz5eIXCvw1-572iz3QnVSe~955ZDmPZ58hjzzEhHNurr7d~tDm9~uvO94m9wSbUsv5QrwXUCzoOLW0zfU121MBWE~MAZZR2~uf83wWSNN-etYOcgVPBCQ1LM-uAtEUAlF1U3aGQGhTymN52sYWYzQE8ULNLOuP5b8mQrHllKfInqMj5g__"}
                         alt="Story image"
-                        layout="responsive"
                         width={800}
                         height={650}
                         objectFit="cover"

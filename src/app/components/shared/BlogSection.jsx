@@ -32,7 +32,6 @@ const BlogSection = ({ cardsData }) => {
                     <Image
                         src={card.imageSrc}
                         alt={card.title}
-                        layout="responsive"
                         width={400}
                         height={250}
                         style={{ objectFit: "cover", width: "100%", height: "auto" }}

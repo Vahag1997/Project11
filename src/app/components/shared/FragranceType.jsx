@@ -1,23 +1,23 @@
-import { Box, Grid, GridItem, Button, Heading } from "@chakra-ui/react";
+import { Box, Grid, GridItem, Button, Heading, Text } from "@chakra-ui/react";
 import { HeadingForHome } from ".";
 import backImg from "../../../../public/images/splitBack.webp";
 
-const FragranceType = ({ info }) => {
+const fragrances = [
+  { label: "ALL FRAGRANCES", colSpan: 2, rowSpan: 2 },
+  { label: "MEN", colSpan: 1 },
+  { label: "WOMEN", colSpan: 1 },
+  { label: "UNISEX", colSpan: 2 },
+];
 
-  const { heading, text } = info
+
+const FragranceType = () => {
+
   
-  const fragrances = [
-    { label: "ALL FRAGRANCES", colSpan: 2, rowSpan: 2 },
-    { label: "MEN", colSpan: 1 },
-    { label: "WOMEN", colSpan: 1 },
-    { label: "UNISEX", colSpan: 2 },
-  ];
-
   return (
     <Box textAlign="center" py={8} px="90px">
       <HeadingForHome
-        heading={heading}
-        text={text}
+        heading={"Shop by Fragrance Type"}
+        text={"Explore our collections for men, women, unisex, and more to find your perfect scent"}
         theme="black"/>
      
       <Grid
@@ -51,8 +51,8 @@ const FragranceType = ({ info }) => {
         ))}
       </Grid>
 
-      <Button background='#0E623E' size="lg" variant="solid" fontWeight="bold" borderRadius="md">
-        View All Products
+      <Button background='#0E623E' p="16px 24px" width="13vw" height="auto" variant="solid" borderRadius="14px">
+      <Text fontSize='1.36vw' fontWeight={600} lineHeight="40px">View All Products</Text>
       </Button>
     </Box>
   );

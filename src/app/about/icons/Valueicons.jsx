@@ -35,7 +35,7 @@ const HeartIcon = () => {
 
     )
 }
-const Avatarsicon = () => {
+const AvatarsIcon = () => {
     return (
         <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="0.03125" y="0.527466" width="71.6426" height="71.6426" rx="35.8213" fill="#0E623E"/>
@@ -73,7 +73,7 @@ const HandLeafIcon = () => {
 
     )
 }
-const ComunnityIcon = () => {
+const CommunityIcon = () => {
     return (
         <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="0.03125" y="0.527405" width="71.6426" height="71.6426" rx="35.8213" fill="#0E623E" />
@@ -90,4 +90,4 @@ const ComunnityIcon = () => {
     )
 }
 
-export { HandsIcon, CheckIcon, HeartIcon, Avatarsicon, HandLeafIcon, ComunnityIcon }
+export { HandsIcon, CheckIcon, HeartIcon, AvatarsIcon, HandLeafIcon, CommunityIcon }

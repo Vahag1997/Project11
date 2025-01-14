@@ -12,7 +12,7 @@ const CardCarousel = ({ products, info, slides }) => {
 
   return (
     <div className="carousel-container">
-      <HeadingForHome heading={heading} text={text}/>
+      <HeadingForHome heading={heading} text={text} />
       <div className="swiper-wrapper">
         <Swiper
           slidesPerView={slides}
@@ -23,7 +23,7 @@ const CardCarousel = ({ products, info, slides }) => {
         >
           {products.map((product, idx) => (
             <SwiperSlide key={idx}>
-              <SingleCard key={idx} product={product}/>
+              <SingleCard key={idx} product={product} />
             </SwiperSlide>
           ))}
         </Swiper>

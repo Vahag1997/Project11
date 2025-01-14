@@ -5,11 +5,7 @@ import { PRODUCTS,TESTIMONIALSDATA, CARDSDATA } from "./components/constants/con
 import Testimonials from "./components/shared/Testimonials/Testimonials";
 import CardCarousel from "./components/shared/CardCarousel/CardCarousel";
 
-const TEXT1 = {
-  heading: "Shop by Fragrance Type",
-  text: "Explore our collections for men, women, unisex, and more to find your perfect scent",
-  theme: ""
-}
+
 const TEXT2 = {
   heading: "Our Best Sellers",
   text: "Discover the top fragrances our customers love, handpicked for their irresistible scents and lasting impressions",
@@ -48,7 +44,7 @@ export default function Home() {
 
   return (
     <div >
-      <FragranceType info={TEXT1} />
+      <FragranceType/>
       <CardCarousel products={PRODUCTS} info={TEXT2} slides={4}/>
       <PopularBrands info={TEXT3}/>
       <CardCarousel products={PRODUCTS} info={TEXT4} slides={4}/>

@@ -6,11 +6,13 @@ import { Box, Flex, Image, IconButton } from "@chakra-ui/react";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import { IconContext } from "react-icons";
 import Navbar from "./Navbar";
-import { usePathname } from 'next/navigation';
+import { HOMEPAGESLIDES } from "../constants/constants";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 
-const HeaderCarousel = ({ slides }) => {
-    const pathname = usePathname();
-    console.log(pathname.slice(1), "nameee");
+const HeaderCarousel = () => {
 
     const [emblaRef, emblaApi] = useEmblaCarousel({
         align: "start",
@@ -19,23 +21,6 @@ const HeaderCarousel = ({ slides }) => {
 
     const [selectedIndex, setSelectedIndex] = useState(0);
     const [scrollSnaps, setScrollSnaps] = useState([]);
-
-    // Set default value based on the current path
-    useEffect(() => {
-        if (!emblaApi) return;
-
-        // Determine default slide index based on the pathname
-        const defaultIndex = {
-            "home": 0,
-            "about": 1,
-            "brands": 2,
-            "blog": 3,
-        }[pathname.slice(1)] || 0; 
-
-        // Scroll to the default slide
-        emblaApi.scrollTo(defaultIndex);
-        setSelectedIndex(defaultIndex);
-    }, [pathname, emblaApi]);
 
     const scrollTo = useCallback((index) => emblaApi?.scrollTo(index), [emblaApi]);
     const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
@@ -57,9 +42,35 @@ const HeaderCarousel = ({ slides }) => {
         <>
             <Box maxW="100%" mx="auto" position="relative">
                 <Navbar />
+
+                {/* <Swiper
+                    slidesPerView={1}
+                    spaceBetween={40}
+                    navigation={true}
+                    modules={[Navigation]}
+                    className="mySwiper"
+
+                >
+                    {HOMEPAGESLIDES.map((slide, idx) => (
+                        <SwiperSlide key={idx}>
+                            <Box key={idx} flex="0 0 100%">
+                                <Image
+                                    src={slide.image}
+                                    alt={slide.title}
+                                    w="full"
+                                    objectFit="cover"
+                                    height="600px"
+                                    filter="brightness(50%)"
+                                />
+                            </Box>
+                        </SwiperSlide>
+                    ))}
+                </Swiper> */}
+
+
                 <Box overflow="hidden" ref={emblaRef}>
                     <Flex>
-                        {slides.map((slide, idx) => (
+                        {HOMEPAGESLIDES.map((slide, idx) => (
                             <Box key={idx} flex="0 0 100%">
                                 <Image
                                     src={slide.image}

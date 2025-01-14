@@ -35,7 +35,6 @@ const BrandSlider = () => {
                 width={350}
                 height={200}
                 unoptimized
-                layout="responsive"
               />
             </Box>
           ))}

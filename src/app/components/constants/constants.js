@@ -1,4 +1,5 @@
-import { HandsIcon, CheckIcon, HeartIcon, Avatarsicon, HandLeafIcon, ComunnityIcon } from "@/app/about/icons/Valueicons";
+import { HandsIcon, CheckIcon, HeartIcon, AvatarsIcon, HandLeafIcon, CommunityIcon } from "../../about/icons/Valueicons";
+
 
 const HOMEPAGESLIDES = [
   {
@@ -31,58 +32,172 @@ const HOMEPAGESLIDES = [
 
 const PRODUCTS = [
   {
-    image: "https://s3-alpha-sig.figma.com/img/a540/736d/eeaaa92f709d14bfbfb642082f0dc766?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hQV2UHT5RbmamFHJkRv1gstE~CQ4Fn5fxyoOMY~IA9uZAwXIDYNeZ26ks-wvfU6yhpaZKOPH1ipvbvsTvH5JiOdLkcudvZ0TiWFf81TxDL4b4ak~n6i-rAb5gEO02nieXYV1xj7VPjyn3vwXasBV9lpZhgcoyF1ciZtUlbp-UlBpzWG8PJ7TwDfXz89IAiw2FbmOTbU2uEsLvJuANJc53jjl7ykEWI1jpYA0onB~oknROu32Q0Inm6IcQXPGEaWn3rPjYpDgZxhb0-rWUFhTbF~Y1fyiyCTtyjHYATM0cvr7yIXNRn1YV0e6tP-Jg4TI0PHkRBIZYEwF3tQCFpW9Mg__",
+    image: "https://s3-alpha-sig.figma.com/img/8754/fb75/42496fd946443e1e49b732b5f5ab55d1?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XTf~hN8MhiVaB6akHolm9vq7imfHmi6U9GSt5TcrPgLDntjU0NC~0VEfgWxl~sol5Nv6Fl5VkycCfuLkjxMhdeLJ~OUkQI7WEKrpu3VEl5rUYGijUKZ3OCv5Bkg28u2MpA6pYfVZezKOSyJgU4IkQVbnzBF1MKW5RKJI64bH29oJRmNAo1aWDdhVIh-IggB9ycP6P4F-RFkEvSQ8f7e8a01rT9HYoY-O4BnX~l4G0D8rcYzVrnXF4DFibZwv0CMH7x9g9nwh2FUvtWU5R5EMKVsxhm9JgBvrAz5~627htxosg65LdnZpeCIO9ftCumFyJI4~Fo9GHSpgXa5VAhRy9Q__",
     name: "Amouage Epic Man",
     description: "Eau de Parfum",
     price: "$85 - $110",
     discount: "20%"
   },
   {
-    image: "https://s3-alpha-sig.figma.com/img/8754/fb75/42496fd946443e1e49b732b5f5ab55d1?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jMVTwIBOIdi~ZD~4VEuxOkmoiHQtWP3LSwJ16chve-qNdLGgz8SZA3BYix8s3~IDzVPzvml1MaHgkY~7lqlomah-nbdV8pQllaQ7uQl7ImaQ8zd-BkF8wRj0SEDb6T6Br1yGgBKXRBSttrNaND7voI7AKYrwmM3sdpkYkrWQ3bo3nAM7Rgtsum0h6DXxYN3PuJFya6F4MMLkPJ9ZWWBYblCWQ3~6nLKmCaw0Lj6I8zpAM6PLvpbyhgTXIaY8gjb7i4hjkZlmBgSUrd4YgXZLVDk4cQPsPhq2~8owuEkvO1HsDEBxPTfarVOPa706iu4-eVr5FY71ZGLtlPFQ6zSq4g__",
+    image: "https://zacshop.com/cdn/shop/articles/bottle-perfume-with-word-perfume-it.jpg?v=1687911687",
     name: "Amouage Epic Man",
     description: "Eau de Parfum",
     price: "$85 - $110",
-    discount: "10%"
+    discount: "20%"
   },
   {
-    image: "https://s3-alpha-sig.figma.com/img/f249/93c9/fbfc3e67898164a582ee89f852a0f271?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D0aumYfYxkjPaJ4zdJpedR0J5fcYV~eA~ImLn-Zms5x-TN6VqMLgouk1C~wN66Mn9jySsawN07CioKv8R5H6WfJyTfZS2f2GrKdlqco3j9pdR2ErXwOCd0xc9VNezrHtl6Lu3Gd7cvIZf9hVyXLljAr~Afl3pbPzx5vNyVmLgmur9AhHQB472Jz-wSGan4aLOKeITLK9um5G2NyaNdYw~WBg6RioIOQ~HZ3UJwrFLLm2vdgrPRI3uBv8ZC~-RxMQPFrRXnNO02uyOZQyYLh0co8UUm-b~3PRVqVBxdPIbs5IvCpAtIlyfHek5CmMDp848j7TV~kewoAuKFKOfKhWlw__",
-    name: "Memo Irish Leather",
-    description: "Eau de Parfum",
-    price: "$85 - $110",
-    discount: "30%"
-  },
-  {
-    image: "https://s3-alpha-sig.figma.com/img/a540/736d/eeaaa92f709d14bfbfb642082f0dc766?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hQV2UHT5RbmamFHJkRv1gstE~CQ4Fn5fxyoOMY~IA9uZAwXIDYNeZ26ks-wvfU6yhpaZKOPH1ipvbvsTvH5JiOdLkcudvZ0TiWFf81TxDL4b4ak~n6i-rAb5gEO02nieXYV1xj7VPjyn3vwXasBV9lpZhgcoyF1ciZtUlbp-UlBpzWG8PJ7TwDfXz89IAiw2FbmOTbU2uEsLvJuANJc53jjl7ykEWI1jpYA0onB~oknROu32Q0Inm6IcQXPGEaWn3rPjYpDgZxhb0-rWUFhTbF~Y1fyiyCTtyjHYATM0cvr7yIXNRn1YV0e6tP-Jg4TI0PHkRBIZYEwF3tQCFpW9Mg__",
-    name: "Memo Irish Leather",
+    image: "https://s3-alpha-sig.figma.com/img/8754/fb75/42496fd946443e1e49b732b5f5ab55d1?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XTf~hN8MhiVaB6akHolm9vq7imfHmi6U9GSt5TcrPgLDntjU0NC~0VEfgWxl~sol5Nv6Fl5VkycCfuLkjxMhdeLJ~OUkQI7WEKrpu3VEl5rUYGijUKZ3OCv5Bkg28u2MpA6pYfVZezKOSyJgU4IkQVbnzBF1MKW5RKJI64bH29oJRmNAo1aWDdhVIh-IggB9ycP6P4F-RFkEvSQ8f7e8a01rT9HYoY-O4BnX~l4G0D8rcYzVrnXF4DFibZwv0CMH7x9g9nwh2FUvtWU5R5EMKVsxhm9JgBvrAz5~627htxosg65LdnZpeCIO9ftCumFyJI4~Fo9GHSpgXa5VAhRy9Q__https://zacshop.com/cdn/shop/articles/bottle-perfume-with-word-perfume-it.jpg?v=1687911687",
+    name: "Amouage Epic Man",
     description: "Eau de Parfum",
     price: "$85 - $110",
     discount: "20%"
   },
   {
-    image: "https://s3-alpha-sig.figma.com/img/f249/93c9/fbfc3e67898164a582ee89f852a0f271?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D0aumYfYxkjPaJ4zdJpedR0J5fcYV~eA~ImLn-Zms5x-TN6VqMLgouk1C~wN66Mn9jySsawN07CioKv8R5H6WfJyTfZS2f2GrKdlqco3j9pdR2ErXwOCd0xc9VNezrHtl6Lu3Gd7cvIZf9hVyXLljAr~Afl3pbPzx5vNyVmLgmur9AhHQB472Jz-wSGan4aLOKeITLK9um5G2NyaNdYw~WBg6RioIOQ~HZ3UJwrFLLm2vdgrPRI3uBv8ZC~-RxMQPFrRXnNO02uyOZQyYLh0co8UUm-b~3PRVqVBxdPIbs5IvCpAtIlyfHek5CmMDp848j7TV~kewoAuKFKOfKhWlw__",
-    name: "Memo Irish Leather",
+    image: "https://s3-alpha-sig.figma.com/img/8754/fb75/42496fd946443e1e49b732b5f5ab55d1?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XTf~hN8MhiVaB6akHolm9vq7imfHmi6U9GSt5TcrPgLDntjU0NC~0VEfgWxl~sol5Nv6Fl5VkycCfuLkjxMhdeLJ~OUkQI7WEKrpu3VEl5rUYGijUKZ3OCv5Bkg28u2MpA6pYfVZezKOSyJgU4IkQVbnzBF1MKW5RKJI64bH29oJRmNAo1aWDdhVIh-IggB9ycP6P4F-RFkEvSQ8f7e8a01rT9HYoY-O4BnX~l4G0D8rcYzVrnXF4DFibZwv0CMH7x9g9nwh2FUvtWU5R5EMKVsxhm9JgBvrAz5~627htxosg65LdnZpeCIO9ftCumFyJI4~Fo9GHSpgXa5VAhRy9Q__https://zacshop.com/cdn/shop/articles/bottle-perfume-with-word-perfume-it.jpg?v=1687911687",
+    name: "Amouage Epic Man",
     description: "Eau de Parfum",
     price: "$85 - $110",
     discount: "20%"
   },
   {
-    image: "https://s3-alpha-sig.figma.com/img/f249/93c9/fbfc3e67898164a582ee89f852a0f271?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D0aumYfYxkjPaJ4zdJpedR0J5fcYV~eA~ImLn-Zms5x-TN6VqMLgouk1C~wN66Mn9jySsawN07CioKv8R5H6WfJyTfZS2f2GrKdlqco3j9pdR2ErXwOCd0xc9VNezrHtl6Lu3Gd7cvIZf9hVyXLljAr~Afl3pbPzx5vNyVmLgmur9AhHQB472Jz-wSGan4aLOKeITLK9um5G2NyaNdYw~WBg6RioIOQ~HZ3UJwrFLLm2vdgrPRI3uBv8ZC~-RxMQPFrRXnNO02uyOZQyYLh0co8UUm-b~3PRVqVBxdPIbs5IvCpAtIlyfHek5CmMDp848j7TV~kewoAuKFKOfKhWlw__",
-    name: "Memo Irisdsdh Leather",
-    description: "Eau de Parfum",
-    price: "$85 - $110",
-  },
-  {
-    image: "https://s3-alpha-sig.figma.com/img/a540/736d/eeaaa92f709d14bfbfb642082f0dc766?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hQV2UHT5RbmamFHJkRv1gstE~CQ4Fn5fxyoOMY~IA9uZAwXIDYNeZ26ks-wvfU6yhpaZKOPH1ipvbvsTvH5JiOdLkcudvZ0TiWFf81TxDL4b4ak~n6i-rAb5gEO02nieXYV1xj7VPjyn3vwXasBV9lpZhgcoyF1ciZtUlbp-UlBpzWG8PJ7TwDfXz89IAiw2FbmOTbU2uEsLvJuANJc53jjl7ykEWI1jpYA0onB~oknROu32Q0Inm6IcQXPGEaWn3rPjYpDgZxhb0-rWUFhTbF~Y1fyiyCTtyjHYATM0cvr7yIXNRn1YV0e6tP-Jg4TI0PHkRBIZYEwF3tQCFpW9Mg__",
-    name: "Memo Irish Leather",
+    image: "https://s3-alpha-sig.figma.com/img/8754/fb75/42496fd946443e1e49b732b5f5ab55d1?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XTf~hN8MhiVaB6akHolm9vq7imfHmi6U9GSt5TcrPgLDntjU0NC~0VEfgWxl~sol5Nv6Fl5VkycCfuLkjxMhdeLJ~OUkQI7WEKrpu3VEl5rUYGijUKZ3OCv5Bkg28u2MpA6pYfVZezKOSyJgU4IkQVbnzBF1MKW5RKJI64bH29oJRmNAo1aWDdhVIh-IggB9ycP6P4F-RFkEvSQ8f7e8a01rT9HYoY-O4BnX~l4G0D8rcYzVrnXF4DFibZwv0CMH7x9g9nwh2FUvtWU5R5EMKVsxhm9JgBvrAz5~627htxosg65LdnZpeCIO9ftCumFyJI4~Fo9GHSpgXa5VAhRy9Q__https://zacshop.com/cdn/shop/articles/bottle-perfume-with-word-perfume-it.jpg?v=1687911687",
+    name: "Amouage Epic Man",
     description: "Eau de Parfum",
     price: "$85 - $110",
     discount: "20%"
   },
   {
-    image: "https://s3-alpha-sig.figma.com/img/f249/93c9/fbfc3e67898164a582ee89f852a0f271?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D0aumYfYxkjPaJ4zdJpedR0J5fcYV~eA~ImLn-Zms5x-TN6VqMLgouk1C~wN66Mn9jySsawN07CioKv8R5H6WfJyTfZS2f2GrKdlqco3j9pdR2ErXwOCd0xc9VNezrHtl6Lu3Gd7cvIZf9hVyXLljAr~Afl3pbPzx5vNyVmLgmur9AhHQB472Jz-wSGan4aLOKeITLK9um5G2NyaNdYw~WBg6RioIOQ~HZ3UJwrFLLm2vdgrPRI3uBv8ZC~-RxMQPFrRXnNO02uyOZQyYLh0co8UUm-b~3PRVqVBxdPIbs5IvCpAtIlyfHek5CmMDp848j7TV~kewoAuKFKOfKhWlw__",
-    name: "BYREDOBAL DAFRIQUE",
+    image: "https://s3-alpha-sig.figma.com/img/8754/fb75/42496fd946443e1e49b732b5f5ab55d1?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XTf~hN8MhiVaB6akHolm9vq7imfHmi6U9GSt5TcrPgLDntjU0NC~0VEfgWxl~sol5Nv6Fl5VkycCfuLkjxMhdeLJ~OUkQI7WEKrpu3VEl5rUYGijUKZ3OCv5Bkg28u2MpA6pYfVZezKOSyJgU4IkQVbnzBF1MKW5RKJI64bH29oJRmNAo1aWDdhVIh-IggB9ycP6P4F-RFkEvSQ8f7e8a01rT9HYoY-O4BnX~l4G0D8rcYzVrnXF4DFibZwv0CMH7x9g9nwh2FUvtWU5R5EMKVsxhm9JgBvrAz5~627htxosg65LdnZpeCIO9ftCumFyJI4~Fo9GHSpgXa5VAhRy9Q__https://zacshop.com/cdn/shop/articles/bottle-perfume-with-word-perfume-it.jpg?v=1687911687",
+    name: "Amouage Epic Man",
     description: "Eau de Parfum",
     price: "$85 - $110",
+    discount: "20%"
+  },
+  {
+    image: "https://s3-alpha-sig.figma.com/img/8754/fb75/42496fd946443e1e49b732b5f5ab55d1?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XTf~hN8MhiVaB6akHolm9vq7imfHmi6U9GSt5TcrPgLDntjU0NC~0VEfgWxl~sol5Nv6Fl5VkycCfuLkjxMhdeLJ~OUkQI7WEKrpu3VEl5rUYGijUKZ3OCv5Bkg28u2MpA6pYfVZezKOSyJgU4IkQVbnzBF1MKW5RKJI64bH29oJRmNAo1aWDdhVIh-IggB9ycP6P4F-RFkEvSQ8f7e8a01rT9HYoY-O4BnX~l4G0D8rcYzVrnXF4DFibZwv0CMH7x9g9nwh2FUvtWU5R5EMKVsxhm9JgBvrAz5~627htxosg65LdnZpeCIO9ftCumFyJI4~Fo9GHSpgXa5VAhRy9Q__https://zacshop.com/cdn/shop/articles/bottle-perfume-with-word-perfume-it.jpg?v=1687911687",
+    name: "Amouage Epic Man",
+    description: "Eau de Parfum",
+    price: "$85 - $110",
+    discount: "20%"
+  },
+  {
+    image: "https://s3-alpha-sig.figma.com/img/8754/fb75/42496fd946443e1e49b732b5f5ab55d1?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XTf~hN8MhiVaB6akHolm9vq7imfHmi6U9GSt5TcrPgLDntjU0NC~0VEfgWxl~sol5Nv6Fl5VkycCfuLkjxMhdeLJ~OUkQI7WEKrpu3VEl5rUYGijUKZ3OCv5Bkg28u2MpA6pYfVZezKOSyJgU4IkQVbnzBF1MKW5RKJI64bH29oJRmNAo1aWDdhVIh-IggB9ycP6P4F-RFkEvSQ8f7e8a01rT9HYoY-O4BnX~l4G0D8rcYzVrnXF4DFibZwv0CMH7x9g9nwh2FUvtWU5R5EMKVsxhm9JgBvrAz5~627htxosg65LdnZpeCIO9ftCumFyJI4~Fo9GHSpgXa5VAhRy9Q__https://zacshop.com/cdn/shop/articles/bottle-perfume-with-word-perfume-it.jpg?v=1687911687",
+    name: "Amouage Epic Man",
+    description: "Eau de Parfum",
+    price: "$85 - $110",
+    discount: "20%"
+  },
+  {
+    image: "https://s3-alpha-sig.figma.com/img/8754/fb75/42496fd946443e1e49b732b5f5ab55d1?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XTf~hN8MhiVaB6akHolm9vq7imfHmi6U9GSt5TcrPgLDntjU0NC~0VEfgWxl~sol5Nv6Fl5VkycCfuLkjxMhdeLJ~OUkQI7WEKrpu3VEl5rUYGijUKZ3OCv5Bkg28u2MpA6pYfVZezKOSyJgU4IkQVbnzBF1MKW5RKJI64bH29oJRmNAo1aWDdhVIh-IggB9ycP6P4F-RFkEvSQ8f7e8a01rT9HYoY-O4BnX~l4G0D8rcYzVrnXF4DFibZwv0CMH7x9g9nwh2FUvtWU5R5EMKVsxhm9JgBvrAz5~627htxosg65LdnZpeCIO9ftCumFyJI4~Fo9GHSpgXa5VAhRy9Q__https://zacshop.com/cdn/shop/articles/bottle-perfume-with-word-perfume-it.jpg?v=1687911687",
+    name: "Amouage Epic Man",
+    description: "Eau de Parfum",
+    price: "$85 - $110",
+    discount: "20%"
+  },
+  {
+    image: "https://s3-alpha-sig.figma.com/img/8754/fb75/42496fd946443e1e49b732b5f5ab55d1?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XTf~hN8MhiVaB6akHolm9vq7imfHmi6U9GSt5TcrPgLDntjU0NC~0VEfgWxl~sol5Nv6Fl5VkycCfuLkjxMhdeLJ~OUkQI7WEKrpu3VEl5rUYGijUKZ3OCv5Bkg28u2MpA6pYfVZezKOSyJgU4IkQVbnzBF1MKW5RKJI64bH29oJRmNAo1aWDdhVIh-IggB9ycP6P4F-RFkEvSQ8f7e8a01rT9HYoY-O4BnX~l4G0D8rcYzVrnXF4DFibZwv0CMH7x9g9nwh2FUvtWU5R5EMKVsxhm9JgBvrAz5~627htxosg65LdnZpeCIO9ftCumFyJI4~Fo9GHSpgXa5VAhRy9Q__https://zacshop.com/cdn/shop/articles/bottle-perfume-with-word-perfume-it.jpg?v=1687911687",
+    name: "Amouage Epic Man",
+    description: "Eau de Parfum",
+    price: "$85 - $110",
+    discount: "20%"
+  },
+  {
+    image: "https://s3-alpha-sig.figma.com/img/8754/fb75/42496fd946443e1e49b732b5f5ab55d1?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XTf~hN8MhiVaB6akHolm9vq7imfHmi6U9GSt5TcrPgLDntjU0NC~0VEfgWxl~sol5Nv6Fl5VkycCfuLkjxMhdeLJ~OUkQI7WEKrpu3VEl5rUYGijUKZ3OCv5Bkg28u2MpA6pYfVZezKOSyJgU4IkQVbnzBF1MKW5RKJI64bH29oJRmNAo1aWDdhVIh-IggB9ycP6P4F-RFkEvSQ8f7e8a01rT9HYoY-O4BnX~l4G0D8rcYzVrnXF4DFibZwv0CMH7x9g9nwh2FUvtWU5R5EMKVsxhm9JgBvrAz5~627htxosg65LdnZpeCIO9ftCumFyJI4~Fo9GHSpgXa5VAhRy9Q__https://zacshop.com/cdn/shop/articles/bottle-perfume-with-word-perfume-it.jpg?v=1687911687",
+    name: "Amouage Epic Man",
+    description: "Eau de Parfum",
+    price: "$85 - $110",
+    discount: "20%"
+  },
+  {
+    image: "https://s3-alpha-sig.figma.com/img/8754/fb75/42496fd946443e1e49b732b5f5ab55d1?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XTf~hN8MhiVaB6akHolm9vq7imfHmi6U9GSt5TcrPgLDntjU0NC~0VEfgWxl~sol5Nv6Fl5VkycCfuLkjxMhdeLJ~OUkQI7WEKrpu3VEl5rUYGijUKZ3OCv5Bkg28u2MpA6pYfVZezKOSyJgU4IkQVbnzBF1MKW5RKJI64bH29oJRmNAo1aWDdhVIh-IggB9ycP6P4F-RFkEvSQ8f7e8a01rT9HYoY-O4BnX~l4G0D8rcYzVrnXF4DFibZwv0CMH7x9g9nwh2FUvtWU5R5EMKVsxhm9JgBvrAz5~627htxosg65LdnZpeCIO9ftCumFyJI4~Fo9GHSpgXa5VAhRy9Q__https://zacshop.com/cdn/shop/articles/bottle-perfume-with-word-perfume-it.jpg?v=1687911687",
+    name: "Amouage Epic Man",
+    description: "Eau de Parfum",
+    price: "$85 - $110",
+    discount: "20%"
+  },
+  {
+    image: "https://s3-alpha-sig.figma.com/img/8754/fb75/42496fd946443e1e49b732b5f5ab55d1?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XTf~hN8MhiVaB6akHolm9vq7imfHmi6U9GSt5TcrPgLDntjU0NC~0VEfgWxl~sol5Nv6Fl5VkycCfuLkjxMhdeLJ~OUkQI7WEKrpu3VEl5rUYGijUKZ3OCv5Bkg28u2MpA6pYfVZezKOSyJgU4IkQVbnzBF1MKW5RKJI64bH29oJRmNAo1aWDdhVIh-IggB9ycP6P4F-RFkEvSQ8f7e8a01rT9HYoY-O4BnX~l4G0D8rcYzVrnXF4DFibZwv0CMH7x9g9nwh2FUvtWU5R5EMKVsxhm9JgBvrAz5~627htxosg65LdnZpeCIO9ftCumFyJI4~Fo9GHSpgXa5VAhRy9Q__https://zacshop.com/cdn/shop/articles/bottle-perfume-with-word-perfume-it.jpg?v=1687911687",
+    name: "Amouage Epic Man",
+    description: "Eau de Parfum",
+    price: "$85 - $110",
+    discount: "20%"
+  },
+  {
+    image: "https://s3-alpha-sig.figma.com/img/8754/fb75/42496fd946443e1e49b732b5f5ab55d1?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XTf~hN8MhiVaB6akHolm9vq7imfHmi6U9GSt5TcrPgLDntjU0NC~0VEfgWxl~sol5Nv6Fl5VkycCfuLkjxMhdeLJ~OUkQI7WEKrpu3VEl5rUYGijUKZ3OCv5Bkg28u2MpA6pYfVZezKOSyJgU4IkQVbnzBF1MKW5RKJI64bH29oJRmNAo1aWDdhVIh-IggB9ycP6P4F-RFkEvSQ8f7e8a01rT9HYoY-O4BnX~l4G0D8rcYzVrnXF4DFibZwv0CMH7x9g9nwh2FUvtWU5R5EMKVsxhm9JgBvrAz5~627htxosg65LdnZpeCIO9ftCumFyJI4~Fo9GHSpgXa5VAhRy9Q__https://zacshop.com/cdn/shop/articles/bottle-perfume-with-word-perfume-it.jpg?v=1687911687",
+    name: "Amouage Epic Man",
+    description: "Eau de Parfum",
+    price: "$85 - $110",
+    discount: "20%"
+  },
+  {
+    image: "https://s3-alpha-sig.figma.com/img/8754/fb75/42496fd946443e1e49b732b5f5ab55d1?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XTf~hN8MhiVaB6akHolm9vq7imfHmi6U9GSt5TcrPgLDntjU0NC~0VEfgWxl~sol5Nv6Fl5VkycCfuLkjxMhdeLJ~OUkQI7WEKrpu3VEl5rUYGijUKZ3OCv5Bkg28u2MpA6pYfVZezKOSyJgU4IkQVbnzBF1MKW5RKJI64bH29oJRmNAo1aWDdhVIh-IggB9ycP6P4F-RFkEvSQ8f7e8a01rT9HYoY-O4BnX~l4G0D8rcYzVrnXF4DFibZwv0CMH7x9g9nwh2FUvtWU5R5EMKVsxhm9JgBvrAz5~627htxosg65LdnZpeCIO9ftCumFyJI4~Fo9GHSpgXa5VAhRy9Q__https://zacshop.com/cdn/shop/articles/bottle-perfume-with-word-perfume-it.jpg?v=1687911687",
+    name: "Amouage Epic Man",
+    description: "Eau de Parfum",
+    price: "$85 - $110",
+    discount: "20%"
+  },
+  {
+    image: "https://s3-alpha-sig.figma.com/img/8754/fb75/42496fd946443e1e49b732b5f5ab55d1?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XTf~hN8MhiVaB6akHolm9vq7imfHmi6U9GSt5TcrPgLDntjU0NC~0VEfgWxl~sol5Nv6Fl5VkycCfuLkjxMhdeLJ~OUkQI7WEKrpu3VEl5rUYGijUKZ3OCv5Bkg28u2MpA6pYfVZezKOSyJgU4IkQVbnzBF1MKW5RKJI64bH29oJRmNAo1aWDdhVIh-IggB9ycP6P4F-RFkEvSQ8f7e8a01rT9HYoY-O4BnX~l4G0D8rcYzVrnXF4DFibZwv0CMH7x9g9nwh2FUvtWU5R5EMKVsxhm9JgBvrAz5~627htxosg65LdnZpeCIO9ftCumFyJI4~Fo9GHSpgXa5VAhRy9Q__https://zacshop.com/cdn/shop/articles/bottle-perfume-with-word-perfume-it.jpg?v=1687911687",
+    name: "Amouage Epic Man",
+    description: "Eau de Parfum",
+    price: "$85 - $110",
+    discount: "20%"
+  },
+  {
+    image: "https://s3-alpha-sig.figma.com/img/8754/fb75/42496fd946443e1e49b732b5f5ab55d1?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XTf~hN8MhiVaB6akHolm9vq7imfHmi6U9GSt5TcrPgLDntjU0NC~0VEfgWxl~sol5Nv6Fl5VkycCfuLkjxMhdeLJ~OUkQI7WEKrpu3VEl5rUYGijUKZ3OCv5Bkg28u2MpA6pYfVZezKOSyJgU4IkQVbnzBF1MKW5RKJI64bH29oJRmNAo1aWDdhVIh-IggB9ycP6P4F-RFkEvSQ8f7e8a01rT9HYoY-O4BnX~l4G0D8rcYzVrnXF4DFibZwv0CMH7x9g9nwh2FUvtWU5R5EMKVsxhm9JgBvrAz5~627htxosg65LdnZpeCIO9ftCumFyJI4~Fo9GHSpgXa5VAhRy9Q__https://zacshop.com/cdn/shop/articles/bottle-perfume-with-word-perfume-it.jpg?v=1687911687",
+    name: "Amouage Epic Man",
+    description: "Eau de Parfum",
+    price: "$85 - $110",
+    discount: "20%"
+  },
+  {
+    image: "https://s3-alpha-sig.figma.com/img/8754/fb75/42496fd946443e1e49b732b5f5ab55d1?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XTf~hN8MhiVaB6akHolm9vq7imfHmi6U9GSt5TcrPgLDntjU0NC~0VEfgWxl~sol5Nv6Fl5VkycCfuLkjxMhdeLJ~OUkQI7WEKrpu3VEl5rUYGijUKZ3OCv5Bkg28u2MpA6pYfVZezKOSyJgU4IkQVbnzBF1MKW5RKJI64bH29oJRmNAo1aWDdhVIh-IggB9ycP6P4F-RFkEvSQ8f7e8a01rT9HYoY-O4BnX~l4G0D8rcYzVrnXF4DFibZwv0CMH7x9g9nwh2FUvtWU5R5EMKVsxhm9JgBvrAz5~627htxosg65LdnZpeCIO9ftCumFyJI4~Fo9GHSpgXa5VAhRy9Q__https://zacshop.com/cdn/shop/articles/bottle-perfume-with-word-perfume-it.jpg?v=1687911687",
+    name: "Amouage Epic Man",
+    description: "Eau de Parfum",
+    price: "$85 - $110",
+    discount: "20%"
+  },
+  {
+    image: "https://s3-alpha-sig.figma.com/img/8754/fb75/42496fd946443e1e49b732b5f5ab55d1?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XTf~hN8MhiVaB6akHolm9vq7imfHmi6U9GSt5TcrPgLDntjU0NC~0VEfgWxl~sol5Nv6Fl5VkycCfuLkjxMhdeLJ~OUkQI7WEKrpu3VEl5rUYGijUKZ3OCv5Bkg28u2MpA6pYfVZezKOSyJgU4IkQVbnzBF1MKW5RKJI64bH29oJRmNAo1aWDdhVIh-IggB9ycP6P4F-RFkEvSQ8f7e8a01rT9HYoY-O4BnX~l4G0D8rcYzVrnXF4DFibZwv0CMH7x9g9nwh2FUvtWU5R5EMKVsxhm9JgBvrAz5~627htxosg65LdnZpeCIO9ftCumFyJI4~Fo9GHSpgXa5VAhRy9Q__https://zacshop.com/cdn/shop/articles/bottle-perfume-with-word-perfume-it.jpg?v=1687911687",
+    name: "Amouage Epic Man",
+    description: "Eau de Parfum",
+    price: "$85 - $110",
+    discount: "20%"
+  },
+  {
+    image: "https://s3-alpha-sig.figma.com/img/8754/fb75/42496fd946443e1e49b732b5f5ab55d1?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XTf~hN8MhiVaB6akHolm9vq7imfHmi6U9GSt5TcrPgLDntjU0NC~0VEfgWxl~sol5Nv6Fl5VkycCfuLkjxMhdeLJ~OUkQI7WEKrpu3VEl5rUYGijUKZ3OCv5Bkg28u2MpA6pYfVZezKOSyJgU4IkQVbnzBF1MKW5RKJI64bH29oJRmNAo1aWDdhVIh-IggB9ycP6P4F-RFkEvSQ8f7e8a01rT9HYoY-O4BnX~l4G0D8rcYzVrnXF4DFibZwv0CMH7x9g9nwh2FUvtWU5R5EMKVsxhm9JgBvrAz5~627htxosg65LdnZpeCIO9ftCumFyJI4~Fo9GHSpgXa5VAhRy9Q__https://zacshop.com/cdn/shop/articles/bottle-perfume-with-word-perfume-it.jpg?v=1687911687",
+    name: "Amouage Epic Man",
+    description: "Eau de Parfum",
+    price: "$85 - $110",
+    discount: "20%"
+  },
+  {
+    image: "https://s3-alpha-sig.figma.com/img/8754/fb75/42496fd946443e1e49b732b5f5ab55d1?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XTf~hN8MhiVaB6akHolm9vq7imfHmi6U9GSt5TcrPgLDntjU0NC~0VEfgWxl~sol5Nv6Fl5VkycCfuLkjxMhdeLJ~OUkQI7WEKrpu3VEl5rUYGijUKZ3OCv5Bkg28u2MpA6pYfVZezKOSyJgU4IkQVbnzBF1MKW5RKJI64bH29oJRmNAo1aWDdhVIh-IggB9ycP6P4F-RFkEvSQ8f7e8a01rT9HYoY-O4BnX~l4G0D8rcYzVrnXF4DFibZwv0CMH7x9g9nwh2FUvtWU5R5EMKVsxhm9JgBvrAz5~627htxosg65LdnZpeCIO9ftCumFyJI4~Fo9GHSpgXa5VAhRy9Q__https://zacshop.com/cdn/shop/articles/bottle-perfume-with-word-perfume-it.jpg?v=1687911687",
+    name: "Amouage Epic Man",
+    description: "Eau de Parfum",
+    price: "$85 - $110",
+    discount: "20%"
+  },
+  {
+    image: "https://s3-alpha-sig.figma.com/img/8754/fb75/42496fd946443e1e49b732b5f5ab55d1?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XTf~hN8MhiVaB6akHolm9vq7imfHmi6U9GSt5TcrPgLDntjU0NC~0VEfgWxl~sol5Nv6Fl5VkycCfuLkjxMhdeLJ~OUkQI7WEKrpu3VEl5rUYGijUKZ3OCv5Bkg28u2MpA6pYfVZezKOSyJgU4IkQVbnzBF1MKW5RKJI64bH29oJRmNAo1aWDdhVIh-IggB9ycP6P4F-RFkEvSQ8f7e8a01rT9HYoY-O4BnX~l4G0D8rcYzVrnXF4DFibZwv0CMH7x9g9nwh2FUvtWU5R5EMKVsxhm9JgBvrAz5~627htxosg65LdnZpeCIO9ftCumFyJI4~Fo9GHSpgXa5VAhRy9Q__https://zacshop.com/cdn/shop/articles/bottle-perfume-with-word-perfume-it.jpg?v=1687911687",
+    name: "Amouage Epic Man",
+    description: "Eau de Parfum",
+    price: "$85 - $110",
+    discount: "20%"
+  },
+  {
+    image: "https://s3-alpha-sig.figma.com/img/8754/fb75/42496fd946443e1e49b732b5f5ab55d1?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XTf~hN8MhiVaB6akHolm9vq7imfHmi6U9GSt5TcrPgLDntjU0NC~0VEfgWxl~sol5Nv6Fl5VkycCfuLkjxMhdeLJ~OUkQI7WEKrpu3VEl5rUYGijUKZ3OCv5Bkg28u2MpA6pYfVZezKOSyJgU4IkQVbnzBF1MKW5RKJI64bH29oJRmNAo1aWDdhVIh-IggB9ycP6P4F-RFkEvSQ8f7e8a01rT9HYoY-O4BnX~l4G0D8rcYzVrnXF4DFibZwv0CMH7x9g9nwh2FUvtWU5R5EMKVsxhm9JgBvrAz5~627htxosg65LdnZpeCIO9ftCumFyJI4~Fo9GHSpgXa5VAhRy9Q__https://zacshop.com/cdn/shop/articles/bottle-perfume-with-word-perfume-it.jpg?v=1687911687",
+    name: "Amouage Epic Man",
+    description: "Eau de Parfum",
+    price: "$85 - $110",
+    discount: "20%"
+  },
+  {
+    image: "https://s3-alpha-sig.figma.com/img/8754/fb75/42496fd946443e1e49b732b5f5ab55d1?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XTf~hN8MhiVaB6akHolm9vq7imfHmi6U9GSt5TcrPgLDntjU0NC~0VEfgWxl~sol5Nv6Fl5VkycCfuLkjxMhdeLJ~OUkQI7WEKrpu3VEl5rUYGijUKZ3OCv5Bkg28u2MpA6pYfVZezKOSyJgU4IkQVbnzBF1MKW5RKJI64bH29oJRmNAo1aWDdhVIh-IggB9ycP6P4F-RFkEvSQ8f7e8a01rT9HYoY-O4BnX~l4G0D8rcYzVrnXF4DFibZwv0CMH7x9g9nwh2FUvtWU5R5EMKVsxhm9JgBvrAz5~627htxosg65LdnZpeCIO9ftCumFyJI4~Fo9GHSpgXa5VAhRy9Q__https://zacshop.com/cdn/shop/articles/bottle-perfume-with-word-perfume-it.jpg?v=1687911687",
+    name: "Amouage Epic Man",
+    description: "Eau de Parfum",
+    price: "$85 - $110",
+    discount: "20%"
   },
 ];
 
@@ -258,7 +373,7 @@ const VALUESMAP = [
   {
     name: "Customer-Centricity",
     description: "We put our customers first, striving to meet their needs and exceed their expectations",
-    icon: <Avatarsicon />
+    icon: <AvatarsIcon />
   },
   {
     name: "Sustainability",
@@ -268,7 +383,7 @@ const VALUESMAP = [
   {
     name: "Community",
     description: "We believe in giving back and fostering connections within our local and global communities",
-    icon: <ComunnityIcon />
+    icon: <CommunityIcon />
   }
 ]
 

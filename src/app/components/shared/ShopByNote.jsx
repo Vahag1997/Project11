@@ -52,7 +52,6 @@ const ShopByNote = ({ info }) => {
                         <Image
                             src={brand.logo}
                             alt={brand.name}
-                            layout="responsive"
                             width={400}
                             height={250}
                             style={{

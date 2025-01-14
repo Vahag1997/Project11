@@ -38,7 +38,6 @@ const FragranceCarousel = () => {
                   objectFit="cover"
                   border="3px solid white"
                   borderRadius="20px"
-                  layout="responsive"
                   width={400}
                   height={250}
                   style={{ objectFit: "cover", width: "100%", minHeight: "400px" }}

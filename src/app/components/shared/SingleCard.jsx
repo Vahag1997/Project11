@@ -1,17 +1,13 @@
 import { Flex, Box, Image, Text, IconButton, Button } from "@chakra-ui/react"
-import { IoIosArrowForward, IoIosHeartEmpty } from "react-icons/io";
+import { IoIosHeartEmpty } from "react-icons/io";
 import { IconContext } from "react-icons";
-import { useMediaQuery } from '@chakra-ui/react'
 import { Rating } from "../ui/rating";
 
 const SingleCard = ({ product }) => {
 
-    const [isSmallScreen] = useMediaQuery("(max-width: 1600px)", { fallback: [false] });
-
-    
     return (
         <>
-                <Flex flexDir="column" gap={2} p={3} position="relative" zIndex="1" textAlign="center">
+                <Flex flexDir="column" gap={2} p={4} position="relative" zIndex="1" textAlign="center">
                     {/* Image */}
                     <Box
                         className="image"
@@ -24,7 +20,6 @@ const SingleCard = ({ product }) => {
                         <Image
                             src={product.image}
                             alt={product.name}
-                            // objectFit="cover"
                             border="3px solid white"
                             fill
                             borderRadius="20px"
@@ -38,7 +33,7 @@ const SingleCard = ({ product }) => {
                       
                     </Box>
                     {/* Name and Description */}
-                    <Flex flexDir="column" gap={1} className="name-profession" mt={5}>
+                    <Flex flexDir="column" gap={1} className="name-profession" >
                         <Text fontWeight="400" fontSize="26px" lineHeight="33px" textAlign="left">
                             {product.name}
                         </Text>
@@ -47,7 +42,7 @@ const SingleCard = ({ product }) => {
                         </Text>
                     </Flex>
 
-                    <Flex className="rating" mt={4}>
+                    <Flex className="rating" mt={1}>
                     <Rating readOnly defaultValue={3} size="md" colorPalette="orange"/>
                     </Flex>
                     <Flex justify="space-between" alignItems="center">
@@ -61,9 +56,9 @@ const SingleCard = ({ product }) => {
                     </Flex>
 
                     {/* Buttons */}
-                    <Flex mt={1} justifyContent="space-around" w="100%">
-                        <Button borderRadius="20px" minH="60px" bg="#0E623E" w="100%">
-                        <Text fontWeight="400" fontSize="26px" lineHeight="33px" color="white" _hover={{ bg: "#207439" }}>
+                    <Flex  justifyContent="space-around" w="100%">
+                        <Button borderRadius="11px" minH="60px" bg="#0E623E" w="100%">
+                        <Text fontWeight="400" fontSize="20px" lineHeight="33px" color="white" _hover={{ bg: "#207439" }}>
                             ADD TO BAG
                         </Text>
                         </Button>
