@@ -1,18 +1,33 @@
-import { Flex, Heading, Text } from "@chakra-ui/react"
-import { HeadingForHome } from "../components/shared"
+import { Flex, Heading, Text } from "@chakra-ui/react";
+import { getTranslations } from "next-intl/server";
 
-
-const BlogHeader = () => {
-
-    return (
-        <Flex align="center" flexDir="column" gap="40px" px="80px" mt="20px" mb="40px">
-            <Heading fontWeight={400} fontSize="55px" lineHeight="28px" > Why Follow Our Blog?</Heading>
-            <Text fontSize="30px" fontWeight={400} lineHeight="28px" textAlign="center">Expert Insights: Contributions from perfumers, fragrance consultants, and enthusiasts.
-                Engaging Content: Easy-to-follow guides, comparisons, and fun olfactory trivia.
-                Interactive Community: Share your favorite scents and discover new ones through our growing community of fragrance lovers.
-                Are you ready to dive into the world of fragrances?</Text>
-        </Flex>
-    )
+export default async function BlogPage() {
+  const t = await getTranslations("BlogHeader");
+  return (
+    <Flex
+      align="center"
+      flexDir="column"
+      gap={{ base: "20px", md: "40px" }}
+      px={{ base: "20px", md: "40px", lg: "80px" }}
+      mt="20px"
+      mb="40px"
+    >
+      <Heading
+        fontWeight={400}
+        fontSize={{ base: "32px", md: "45px", lg: "55px" }}
+        lineHeight={{ base: "36px", md: "50px", lg: "60px" }}
+        textAlign="center"
+      >
+        {t("heading")}
+      </Heading>
+      <Text
+        fontSize={{ base: "16px", md: "20px", lg: "30px" }}
+        fontWeight={400}
+        lineHeight={{ base: "22px", md: "28px", lg: "38px" }}
+        textAlign="center"
+      >
+        {t("text")}
+      </Text>
+    </Flex>
+  );
 }
-
-export default BlogHeader

@@ -1,19 +1,16 @@
-"use client";
-import { CallUsNow, FaqSection } from "../components/shared"
+import { CallUsNow, FaqSection } from "../components/shared";
 import BlogHeader from "./BlogHeader";
-import { BlogSection } from "../components/shared";
-import { CARDSDATA2 } from "../components/constants/constants";
+import { SingleImageText } from "../components/shared";
+import BlogBody from "./BlogBody";
 
-
-const Blog = () => {
-    return (
-        <>
-        <BlogHeader/>
-        <BlogSection cardsData={CARDSDATA2}/>
-        <CallUsNow/>
-        <FaqSection/>
-        </>
-    )
+export default async function Blog() {
+  return (
+    <>
+      <SingleImageText section="blog" img="/headerImages/blog.webp" />
+      <BlogHeader />
+      <BlogBody />
+      <CallUsNow />
+      <FaqSection />
+    </>
+  );
 }
-
-export default Blog

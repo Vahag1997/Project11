@@ -25,5 +25,23 @@ const option1 = [
     { label: "Evening", voteKey: "second" },
   ];
   
-
+  export const DEFAULT_VOTE_OPTIONS = [
+    {
+      category: "HOW LONG DOES IT LAST?",
+      options: ["Weak", "Moderate", "Long Lasting", "Eternal"],
+    },
+    {
+      category: "FOR WHAT TIME OF YEAR",
+      options: ["Winter", "Summer", "Autumn", "Spring"],
+    },
+    {
+      category: "IT CAN BE FELT FROM A DISTANCE",
+      options: ["Intimate", "Moderate", "Strong", "Enormous"],
+    },
+    {
+      category: "FOR WHAT TIME OF DAY",
+      options: ["Day", "Evening"],
+    },
+  ];
+  
   export { option1, option2, option3, option4 };

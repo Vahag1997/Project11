@@ -1,32 +1,103 @@
-.mySwiper{
-    max-width: 400px !important;
-    display: flex !important;
-    justify-content: center !important;
-    gap: 20px !important;
-    margin-top: 20px !important;
-    margin-bottom: 20px !important;
+.mySwiper {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 20px !important;
+  margin-top: 30px !important;
+  margin-bottom: 20px !important;
+  padding: 10px !important;
 }
-.thumbSwiper{
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2) !important;
-    border-radius: 20px;
+.mySwiper .swiper-wrapper {
+  justify-content: center;
+  gap: 10px;
 }
-.swiper-slide{
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    border-radius: 14px !important;
+.thumbSwiper {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 20px;
+  max-width: 120px;
 }
-.mySwiper2{
-    max-width: 820px !important;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2) !important;
-    border-radius: 20px;
+.swiper-slide {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 14px !important;
+}
+.mySwiper2 {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 20px;
+}
+.progressBar {
+  height: 17px;
+}
+.chakra-progress__track {
+  height: 26px;
+  border-radius: 22px;
 }
 
-.chakra-progress__track{
-    height: 26px;
-    border-radius: 22px;
+.swiperImage{
+  background-color: white !important;
 }
 
-.swiper-wrapper{
-    padding-bottom: 20px;
+.swiperImage img {
+  height: 650px
+}
+
+@media (max-width: 767px) {
+  .chakra-radio-card__itemControl {
+    padding: 2px;
+    gap: 0px;
+  }
+  .chakra-radio-card__item {
+    max-width: 120px;
+  }
+  .thumbSwiper {
+    max-width: 60px;
+  }
+  .swiperImage img {
+    height: 300px
+  }
+  .mySwiper{
+    margin-top: 2px !important;
+    margin-bottom: 0px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .chakra-radio-card__itemControl {
+    padding: 8px;
+    gap: 8px;
+  }
+  .chakra-radio-card__item {
+    max-width: 160px;
+  }
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 57% 43%; 
+  grid-template-rows: auto auto; 
+  grid-template-areas:
+    "productImage productHeading"
+    "productImage productAccord";
+    gap: 0px;
+}
+
+.productImage {
+  grid-area: productImage;
+}
+.productHeading {
+  grid-area: productHeading;
+}
+.productAccord {
+  grid-area: productAccord;
+}
+
+@media (max-width: 768px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "productHeading"
+      "productImage"
+      "productAccord";
+  }
 }

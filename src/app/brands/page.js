@@ -1,16 +1,21 @@
-"use client";
-import { CallUsNow, ShareForm, FaqSection } from "../components/shared";
+import {
+  CallUsNow,
+  ShareForm,
+  FaqSection,
+  SingleImageText,
+} from "../components/shared";
 import BrandSlider from "./BrandsSlider";
-const Brands = () => {
 
-    return (
-        <>
-            <BrandSlider />
-            <ShareForm />
-            <CallUsNow />
-            <FaqSection />
-        </>
-    )
-}
+const Brands = ({ searchParams }) => {
+  return (
+    <>
+      <SingleImageText section={"brands"} img="/headerImages/brands.webp" />
+      <BrandSlider searchParams={searchParams}/>
+      <ShareForm />
+      <CallUsNow />
+      <FaqSection />
+    </>
+  );
+};
 
-export default Brands
+export default Brands;

@@ -1,9 +1,10 @@
 "use client";
-
-import English from '/src/app/icons/usa.png';
-import Russian from '/src/app/icons/russia.png';
-import Armenian from '/src/app/icons/armenia.png';
-import Image from 'next/image';
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import English from "/src/app/icons/usa.png";
+import Russian from "/src/app/icons/russia.png";
+import Armenian from "/src/app/icons/armenia.png";
+import Image from "next/image";
 import { createListCollection } from "@chakra-ui/react";
 import {
   SelectContent,
@@ -11,16 +12,51 @@ import {
   SelectRoot,
   SelectTrigger,
   SelectValueText,
-} from '../ui/select';
+} from "../ui/select";
+
+const frameworks = createListCollection({
+  items: [
+    { label: "en", value: "en", icon: English },
+    { label: "ru", value: "ru", icon: Russian },
+    { label: "hy", value: "hy", icon: Armenian },
+  ],
+});
 
 const SelectFlag = () => {
+  const [locale, setLocale] = useState("");
+  const router = useRouter();
+
+
+  useEffect(() => {
+    const cookieLocale = document.cookie
+      .split("; ")
+      .find((row) => row.startsWith("MYNEXTAPP_LOCALE="))
+      ?.split("=")[1];
+  
+    if (cookieLocale) {
+      setLocale(cookieLocale);
+    } else {
+      const browserLocale = navigator.language.slice(0, 2);
+      setLocale(browserLocale);
+      document.cookie = `MYNEXTAPP_LOCALE=${browserLocale}; path=/`; 
+      router.refresh();
+    }
+  }, [router]);
+  
+  const changeLocale = (newLocale) => {
+    setLocale(newLocale.value[0]);
+    document.cookie = `MYNEXTAPP_LOCALE=${newLocale.value[0]}; path=/`;
+    router.refresh();
+  };
+  
   return (
     <SelectRoot
       collection={frameworks}
       justifyContent="center"
       mb="8px"
       width="70px"
-      defaultValue={frameworks.items[0].value}
+      value={[locale]}
+      onValueChange={(value) => changeLocale(value)}
     >
       <SelectTrigger>
         <SelectValueText>
@@ -52,13 +88,5 @@ const SelectFlag = () => {
     </SelectRoot>
   );
 };
-
-const frameworks = createListCollection({
-  items: [
-    { label: "ENG", value: "ENG", icon: English },
-    { label: "RU", value: "RU", icon: Russian },
-    { label: "AM", value: "AM", icon: Armenian },
-  ],
-});
 
 export default SelectFlag;

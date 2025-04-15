@@ -1,71 +1,76 @@
-import { Box, Grid, GridItem, Button} from "@chakra-ui/react";
+import { Box, Grid, GridItem, Button, Text } from "@chakra-ui/react";
 import { HeadingForHome } from ".";
-import Versace from "../../../../public/images/Versace.webp";
-import Calvin from "../../../../public/images/Calvin.webp";
-import Chanel from "../../../../public/images/Chanel.webp";
-import Dolce from "../../../../public/images/Dolce.webp";
-import Guess from "../../../../public/images/Guess.webp";
-import JeanPaul from "../../../../public/images/JeanPaul.webp";
-import MontBlanc from "../../../../public/images/MontBlanc.webp";
-import Prada from "../../../../public/images/Prada.webp";
+import { BRANDS } from "../constants/constants";
 import Image from "next/image";
+import Link from "next/link";
+import { getTranslations  } from "next-intl/server"
 
-const PopularBrands = ({ info }) => {
+export default async function PopularBrands() {
 
-    const { heading, text } = info
-    const brands = [
-        { name: "Calvin Klein", logo: Calvin },
-        { name: "Dolce & Gabbana", logo: Dolce },
-        { name: "Chanel", logo: Chanel },
-        { name: "Prada", logo: Prada },
-        { name: "Guess", logo: Guess },
-        { name: "Mont Blanc", logo: MontBlanc },
-        { name: "Jean Paul Gaultier", logo: JeanPaul },
-        { name: "Versace", logo: Versace },
-    ];
+  const t = await getTranslations("PopularBrands");
+  return (
+    <Box
+      textAlign="center"
+      py={{ base: 3, md: 8 }}
+      px={{ base: "24px", md: "90px" }}
+    >
+      <HeadingForHome
+        heading={t("title")}
+        text={t("description")}
+        theme="black"
+      />
+      <Grid
+        templateColumns={{ base: "repeat(3, 1fr)", md: "repeat(4, 1fr)" }}
+        gap={{ base: 2, md: 4 }}
+      >
+        {BRANDS.map((brand, index) => (
+          <GridItem
+            key={index}
+            as={Link} // ✅ Make entire box clickable
+            href={`/products?brand=${encodeURIComponent(brand.name)}`}
+            display={{ base: index < 6 ? "flex" : "none", md: "flex" }}
+            alignItems="center"
+            justifyContent="center"
+            bg="white"
+            borderRadius={{ base: "5px", md: "20px" }}
+            boxShadow="md"
+            _hover={{ transform: "scale(1.05)", boxShadow: "2xl" }}
+            transition="all 0.3s ease"
+            border="1px solid rgb(183, 158, 158)"
+            p={4}
+            cursor="pointer"
+            minH={{ base: "104px", md: "120px" }}
+          >
+            <Image
+              src={brand.logo}
+              alt={brand.name}
+              height={305}
+              width={400}
+              style={{ objectFit: "contain" }}
+            />
+          </GridItem>
+        ))}
+      </Grid>
 
-    return (
-        <Box textAlign="center" py={8} px="90px">
-            <HeadingForHome
-                heading={heading}
-                text={text}
-                theme="black" />
-            <Grid
-                templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(4, 1fr)" }}
-                gap={4}
-                mb={6}
-            >
-                {brands.map((brand, index) => (
-                    <GridItem
-                        key={index}
-                        display="flex"
-                        alignItems="center"
-                        justifyContent="center"
-                        bg="white"
-                        borderRadius="20px"
-                        boxShadow="md"
-                        border="1px solid #9A6B6B"
-                        p={4}
-                        cursor="pointer" 
-                    >
-                     <Image src={brand.logo} alt={brand.name} height={305} width={400}  />
-                    </GridItem>
-                ))}
-            </Grid>
-
-            <Button
-                background="#0E623E"
-                size="lg"
-                variant="solid"
-                fontWeight="bold"
-                borderRadius="md"
-                color="white"
-                _hover={{ bg: "#09532C" }}
-            >
-                View All Brands
-            </Button>
-        </Box>
-    );
-};
-
-export default PopularBrands;
+      <Button
+        as={Link}
+        href="/brands"
+        background="#0E623E"
+        mt={{ base: "14px", md: "40px" }}
+        p={{ base: "4px 16px", md: "10px 24px" }}
+        height={{ base: "33px", md: "auto" }}
+        variant="solid"
+        borderRadius={{ base: "6px", md: "14px" }}
+        _hover={{ bg: "#09532C" }}
+      >
+        <Text
+          fontSize={{ base: "12px", md: "1.36vw" }}
+          fontWeight={{ base: 400, md: 600 }}
+          lineHeight={{ base: "15px", md: "37px" }}
+        >
+          {t("viewAll")}
+        </Text>
+      </Button>
+    </Box>
+  );
+}

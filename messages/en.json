@@ -1,0 +1,435 @@
+{
+  "Navbar": {
+    "list": "Hello world!"
+  },
+  "FragranceType": {
+    "title": "Shop by Fragrance Type",
+    "description": "Explore our collections for men, women, unisex, and more to find your perfect scent",
+    "viewAll": "View All Products"
+  },
+  "FREGRANCES": {
+    "all": "ALL FRAGRANCES",
+    "male": "MEN",
+    "female": "WOMEN",
+    "unisex": "UNISEX"
+  },
+  "CardCarousel": {
+    "bestSellers": {
+      "heading": "Our Best Sellers",
+      "text": "Discover the top fragrances our customers love, handpicked for their irresistible scents and lasting impressions",
+      "button": "View All Products"
+    },
+    "newArrivals": {
+      "heading": "New Arrivals",
+      "text": "Be the first to experience our latest fragrances, freshly added to our collection",
+      "button": "View All New Products"
+    },
+    "onSale": {
+      "heading": "On Sale!",
+      "text": "Don't miss out on our special deals! Shop your favorite fragrances at unbeatable prices",
+      "button": "View All Sales"
+    }
+  },
+  "PopularBrands": {
+    "title": "Popular Brands",
+    "description": "Explore the most sought-after fragrance brands trusted for their quality and unforgettable scents",
+    "viewAll": "View All Brands"
+  },
+  "ShopByNote": {
+    "title": "Shop By Note",
+    "description": "Search by your favorite fragrance notes, from floral to woody, and discover scents that match your style",
+    "button1": "View All Notes",
+    "button2": "Hide Notes",
+    "notes": {
+      "floral": "FLORAL",
+      "woody": "WOODY",
+      "tobacco": "TOBACCO",
+      "vanille": "VANILLA",
+      "spicy": "SPICY",
+      "citrus": "CITRUS",
+      "leather": "LEATHER",
+      "fruty": "FRUITY",
+      "alcohol": "ALCOHOL",
+      "aquatic": "AQUATIC",
+      "gourmet": "GOURMAND",
+      "oriental": "ORIENTAL"
+
+    }
+  },
+  "Testimonials": {
+    "title": "Testimonials",
+    "description": "Hear what our customers are saying about their favorite Narffum scents"
+  },
+  "BlogSection": {
+    "title": "Perfume Magazine",
+    "description": "Stay up to date with the latest in the world of fragrances, expert tips, and insider news",
+    "button": "View All Blog"
+  },
+  "ShareForm": {
+    "title": "Got Something Share?",
+    "description": "We'd love to hear from you! Whether you have a question or just want to say hello, reach out to us—we're here to help.",
+    "fullName": "FULL NAME",
+    "email": "EMAIL",
+    "subject": "SUBJECT",
+    "phone": "PHONE",
+    "details": "DETAILS",
+    "submit": "Submit",
+    "fullNamePlaceholder": "Full Name",
+    "emailPlaceholder": "Email",
+    "subjectPlaceholder": "Subject",
+    "phonePlaceholder": "Enter your phone",
+    "detailsPlaceholder": "Details"
+  },
+  "CallUsNow": {
+    "title": "Can't Find What You Are Looking For?",
+    "description": "Let us know, and our team will assist you in finding the perfect fragrance. We are just a click away!",
+    "button": "Call us now"
+  },
+  "FaqSection": {
+    "title": "FREQUENTLY ASKED QUESTIONS",
+    "description": "Find quick answers to some of the most common questions about our fragrances and services.",
+    "faqs": [
+      {
+        "question": "Why NARFFUM?",
+        "answer": "NARFFUM is a combination of my name 'NAREK' and the word 'PARFUM'. It reflects that each scent we offer is a result of my personal inspiration and a part of me. I wanted to create a unique name that’s easy to remember. NARFFUM sounds original and authentic and most importantly, it carries both my identity and the essence of the perfume world. NARFFUM is my signature in the world of fragrances. For me, perfume is not just a scent—it's emotion and memory, something I want to pass on to every buyer. NARFFUM represents the harmony of personal touch and high quality."
+      },
+      {
+        "question": "Why is the logo an ant?",
+        "answer": "The symbolism is simple. Ants communicate with each other through scents (pheromones). We were inspired by their ability to share information through smell—just as we aim to help our customers express emotions and moods through perfumes. Each scent is a new form of communication. Just like ants find their way through scents, you too will find your path in the world of NARFFUM fragrances."
+      },
+      {
+        "question": "Why are your prices much more affordable than in other stores?",
+        "answer": "We intentionally chose an accessible pricing policy because long-term customer relationships matter most to us. We value our customers and especially appreciate when they recommend us to friends. Affordable prices are also possible because we avoid extra costs—no rent for physical stores or staff—since we operate online."
+      },
+      {
+        "question": "Why choose us?",
+        "answer": "1. Personalized Approach. We are always ready to provide our clients with personalized consultations, taking into account their preferences and individual needs. 2. 100% Authentic Products. We guarantee that all products presented by us are original and sourced only from official suppliers. 3. Competitive Prices. We work with the largest and most trusted suppliers, allowing us to offer a wide range of products at competitive prices. 4. Fast Delivery. We ensure prompt delivery so our customers can enjoy their purchases as soon as possible. 5. Wide Selection. With us, you’ll find both world-renowned brands and niche fragrances that are hard to find in other stores."
+      },
+      {
+        "question": "How is the delivery carried out?",
+        "answer": ""
+      }
+    ]
+  },
+  "SingleImageText": {
+    "about": {
+      "heading": "ABOUT NARFFUM",
+      "description": "Welcome to Narffum, where passion meets fragrance. Our journey began with a love for perfumes, and we’re dedicated to helping you discover scents that tell your unique story. At Narffum, we believe every fragrance tells a story. Our passion is helping you find scents that capture yours."
+    },
+    "brands": {
+      "heading": "OUR BRANDS",
+      "description": "Shop a curated selection of renowned fragrance brands at Narfum. Each brand is chosen for its quality, artistry, and ability to create unforgettable scents"
+    },
+    "products": {
+      "heading": "PRODUCTS",
+      "description": "Explore our diverse collection of fragrances, meticulously selected to suit every taste and occasion. Whether you're looking for a signature scent or a special gift, we have something for everyone"
+    },
+    "offers": {
+      "heading": "OFFERS",
+      "description": "Explore our diverse collection of fragrances, meticulously selected to suit every taste and occasion. Whether you're looking for a signature scent or a special gift, we have something for everyone"
+    },
+    "blog": {
+      "heading": "THE NARRFUM BLOG",
+      "description": "Our blog is your perfect destination for trends, tips, expert recommendations, inspiration, experimentation, and new discoveries."
+    }
+  },
+  "AboutStory": {
+    "contactHeading": "Got Something Share?",
+    "contactText": "We'd love to hear from you! Whether you have a question or just want to say hello, reach out to us—we're here to help.",
+    "ourStory": "Our Story",
+    "storyText": "Founded with a love for perfumes, Narfum has grown into a trusted name in the fragrance world. We carefully curate a selection of the finest scents to offer something for everyone. From timeless classics to modern creations, we are here to help you find the fragrance that feels like you.",
+    "viewOffers": "View Offers",
+    "callUs": "Call Us",
+    "imageAlt": "A glimpse into Narfum's story"
+  },
+  "Values": {
+    "heading": "Core Values That Drive Our Success",
+    "description": "At Narfum, our core values guide everything we do. They shape our commitment to providing exceptional fragrances and outstanding customer experiences.",
+    "items": [
+      {
+        "name": "Integrity",
+        "description": "Honesty and transparency are at the heart of our business. We value building long-term relationships with our customers based on openness: honest recommendations, fair pricing, and reliable service. Your satisfaction and trust are our top priorities."
+      },
+      {
+        "name": "Quality",
+        "description": "100% Authentic Products. We guarantee that our entire online store assortment is exclusively authentic and supplied only by official representatives. We thoroughly vet all our suppliers to ensure that every product we offer to our customers is genuine."
+      },
+      {
+        "name": "Passion",
+        "description": "We are always on the lookout for new, unique fragrances to offer our customers the freshest and most exciting novelties in the world of perfumery. We closely follow the latest trends and provide exclusive compositions, continually expanding our collection to meet the expectations of even the most discerning fragrance enthusiasts."
+      },
+      {
+        "name": "Customer Centricity",
+        "description": "Our main goal is to create a customer-focused environment where every visitor is offered the most convenient and personalized experience possible. We guarantee a pleasant and memorable journey, always putting our customers' interests first and striving not only to meet but to exceed their expectations."
+      },
+      {
+        "name": "Sustainability",
+        "description": "Our online store offers a rich selection of fragrances, including legendary classic compositions and the latest masterpieces of the perfume world. We feature exclusive niche perfumes, rare and unique collections, as well as well-known brands — so that every customer can find a scent that matches their taste and mood."
+      },
+      {
+        "name": "Community",
+        "description": "We believe in building strong and long-term relationships with our customers. We bring together people who share a passion for exquisite fragrances, creating a space for exchanging opinions, tips, and recommendations. Our community is not just about products; it's about a shared journey through the world of perfumery and appreciating this art together."
+      }
+    ]
+  },
+  "Brands": {
+    "title": "Shop the most popular brands",
+    "description": "Explore our selection of top-selling fragrance brands known for their quality and unique scents.",
+    "viewAll1": "View All Brands",
+    "viewAll2": "Show Less"
+  },
+  "BlogHeader": {
+    "heading": "Your perfect guide to the world of fragrances.",
+    "text": "Dive into the enchanting world of perfumery, where every bottle tells its own story, and every scent evokes memories."
+  },
+  "FilterMenu": {
+    "topRated": "Top Rated",
+    "priceAsc": "Price Low to High",
+    "priceDesc": "Price High to Low",
+    "newArrivals": "New Arrivals",
+    "allSale": "All Sale",
+    "label": "Sort By",
+    "placeholder": "Select..."
+  },
+  "FilterCategories": {
+    "reset": "Reset",
+    "apply": "Apply",
+    "brand": {
+      "title": "BRAND"
+    },
+    "price": {
+      "title": "PRICE"
+    },
+    "note": {
+      "title": "NOTE",
+      "options": {
+        "aldehydic": "ALDEHYDIC",
+  "alcoholic": "ALCOHOLIC",
+  "amber": "AMBER",
+  "animal": "ANIMAL",
+  "animalic": "ANIMALIC",
+  "aquatic": "AQUATIC",
+  "balsamic": "BALSAMIC",
+  "berry": "BERRY",
+  "cacao": "CACAO",
+  "caramel": "CARAMEL",
+  "chocolate": "CHOCOLATE",
+  "cinnamon": "CINNAMON",
+  "citrus": "CITRUS",
+  "coffee": "COFFEE",
+  "earthy": "EARTHY",
+  "floral": "FLORAL",
+  "fougere": "FOUGERE",
+  "fresh": "FRESH",
+  "fruity": "FRUITY",
+  "gourmand": "GOURMAND",
+  "green": "GREEN",
+  "herbal": "HERBAL",
+  "honey": "HONEY",
+  "incense": "INCENSE",
+  "iris": "IRIS",
+  "jasmine": "JASMINE",
+  "lavender": "LAVENDER",
+  "leather": "LEATHER",
+  "lemon": "LEMON",
+  "marine": "MARINE",
+  "metallic": "METALLIC",
+  "metallic_fresh": "METALLIC FRESH",
+  "milk": "MILKY",
+  "mint": "MINT",
+  "musky": "MUSKY",
+  "nutty": "NUTTY",
+  "ozonic": "OZONIC",
+  "patchouli": "PATCHOULI",
+  "plum": "PLUM",
+  "powdery": "POWDERY",
+  "rose": "ROSE",
+  "salt": "SALTY",
+  "smoky": "SMOKY",
+  "sweet": "SWEET",
+  "tea": "TEA",
+  "tuberose": "TUBEROSE",
+  "vanilla": "VANILLA",
+  "warm_spicy": "WARM SPICY",
+  "white_floral": "WHITE FLORAL",
+  "woody": "WOODY"
+      }
+    },
+    "gender": {
+      "title": "GENDER",
+      "options": {
+        "male": "male",
+        "female": "female",
+        "unisex": "unisex"
+      }
+    },
+    "size": {
+      "title": "SIZE",
+      "options": {
+        "travel": "TRAVEL SIZE 5-10ML",
+        "medium": "MEDIUM 10-100ML",
+        "large": "LARGE 100ML+"
+      }
+    },
+    "sale": {
+      "title": "SALE",
+      "options": {
+        "10": "10%",
+        "20": "20%",
+        "30": "30%",
+        "40": "40%",
+        "50": "50%",
+        "60": "60%",
+        "70": "70%",
+        "80": "80%",
+        "90": "90%"
+      }
+    }
+  },
+  "ProductCards": {
+    "prev": "Previous",
+    "next": "Next"
+  },
+  "SingleCard": {
+    "addToBag": "ADD TO ",
+    "viewPerfume": "VIEW PERFUME",
+    "all": "All",
+    "products": "Products",
+    "size": "SIZE",
+    "accords": "MAIN ACCORDS"
+  },
+  "Guarante": {
+    "freeDelivery": "FREE DELIVERY",
+    "100Original": "100% ORIGINAL",
+    "payOnDelivery": "PAY ON DELIVERY",
+    "description": "DESCRIPTION",
+    "similarProducts": "SIMILAR PRODUCTS",
+    "otherBrandProducts": "OTHER BRAND PRODUCTS"
+  },
+  "Voting": {
+    "categories": {
+      "lasting": "HOW LONG DOES IT LAST?",
+      "season": "FOR WHAT TIME OF YEAR",
+      "sillage": "IT CAN BE FELT FROM A DISTANCE",
+      "timeofday": "FOR WHAT TIME OF DAY"
+    },
+    "options": {
+      "Weak": "Weak",
+      "Moderate": "Moderate",
+      "Long Lasting": "Long Lasting",
+      "Eternal": "Eternal",
+      "Winter": "Winter",
+      "Spring": "Spring",
+      "Summer": "Summer",
+      "Autumn": "Autumn",
+      "Intimate": "Intimate",
+      "Strong": "Strong",
+      "Enormous": "Enormous",
+      "Day": "Day",
+      "Night": "Night"
+    }
+  },
+  "Navigation": {
+    "home": "HOME",
+    "about": "ABOUT",
+    "brands": "BRANDS",
+    "products": "PRODUCTS",
+    "offers": "OFFERS",
+    "blog": "BLOG"
+  },
+  "Login": {
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "createAccount": "Create An Account",
+    "forgotPassword": "Forgot Password?",
+    "resetPassword": "Reset Password",
+    "newPassword": "New Password",
+    "or": "or",
+    "alreadyHaveAccount": "Already have an account?",
+    "username": "Username",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "dontHaveAccount": "Don't have an account?",
+    "enteryourEmail": "Enter your email",
+    "enteryourPassword": "Enter your password",
+    "enternewPassword": "Enter your new password"
+  },
+  "Blog": {
+    "view": "View",
+    "author": "Author",
+    "readMore": "Read More"
+  },
+  "Footer": {
+    "tagline": "№1 Online Perfume Store in Armenia",
+    "joinTitle": "Join Our Community",
+    "joinDescription": "If you don’t have an account yet, sign up",
+    "signUp": "Sign Up",
+    "signInPrompt": "If you already have an account, sign in here.",
+    "signIn": "Sign In",
+    "nav": {
+      "home": "HOME",
+      "about": "ABOUT",
+      "brands": "BRANDS",
+      "products": "PRODUCTS",
+      "offers": "OFFERS",
+      "blog": "BLOG"
+    },
+    "socialTitle": "FOLLOW US for exclusive",
+    "newsAndUpdates": "news and updates",
+    "workingHours": "Working Hours",
+    "workingTime": "Mon–Sun 10:00 AM – 23:00 PM",
+    "feedback": "Feedback",
+    "email": "E-mail"
+  },
+  "Account": {
+    "account": "Account",
+    "greeting": "Hi",
+    "dashboardMessage": "From your account dashboard you can view your orders, manage wishlist and card.",
+    "orders": "Orders",
+    "wishlist": "Wishlist",
+    "card": "Shopping Cart",
+    "profileInfo": "Profile Information",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "Enter your full name",
+    "email": "Email",
+    "password": "Password",
+    "newPassword": "New Password",
+    "saveChanges": "Save Changes"
+  },
+  "Wishlist": 
+    {
+      "title": "Your Wishlist",
+      "product": "Product ID",
+      "empty": "Your wishlist is empty.",
+      "notLoggedIn": "You must be logged in to view your wishlist."
+    },
+    "Orders": {
+      "title": "My Orders",
+      "emptyTitle": "You have no orders yet",
+      "emptyDescription": "Start shopping and place your first order",
+      "orderDate": "Order Date",
+      "total": "Total",
+          "size": "Size",
+    "quantity": "Quantity"
+    },
+    "Cart": {
+      "title": "Your Bag",
+      "emptyTitle": "Your cart is empty",
+      "emptyDescription": "Explore our products and add items to your cart",
+      "orderSummary": "Order Summary",
+      "subtotal": "Subtotal",
+      "shipping": "Shipping",
+      "shippingFree": "Free",
+      "promo": "Promo Code",
+      "promoPlaceholder": "Enter code",
+      "apply": "Apply",
+      "total": "Total",
+      "checkout": "Proceed to Checkout",
+      "bagEmpty": "Bag is empty",
+      "size": "Size"
+    }
+}

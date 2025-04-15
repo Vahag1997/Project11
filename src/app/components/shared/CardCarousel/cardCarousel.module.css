@@ -1,0 +1,93 @@
+.mySwiper :global(.swiper-slide) {
+  width: 340px;
+  display: flex;
+  justify-content: center;
+}
+
+.mySwiper :global(.swiper) {
+  position: unset;
+}
+
+.mySwiper {
+  position: unset;
+}
+.carouselContainer {
+  background-color: #093623;
+  padding: 32px 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .carouselContainer {
+    padding: 20px 16px;
+  }
+}
+
+.swiperWrapper {
+  position: unset;
+  width: 90%;
+  max-width: 1699px;
+}
+
+.mySwiper :global(.swiper-button-prev) {
+  left: -85px;
+}
+.mySwiper :global(.swiper-button-next) {
+  right: -85px;
+}
+
+.mySwiper :global(.swiper-button-next) {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+}
+
+.productNextButton,
+.productPrevButton {
+  position: absolute;
+  bottom: 40%;
+  transform: translateY(-50%);
+  z-index: 10;
+  color: #afafaf;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.productPrevButton {
+  left: 20px;
+}
+
+.productNextButton {
+  right: 20px;
+}
+
+@media (max-width: 767px) {
+  .productNextButton {
+    right: 7px;
+    bottom: 41%;
+    width: 27px;
+    height: 27px;
+  }
+  .productPrevButton{
+    width: 27px;
+    height: 27px;
+    left: 7px;
+    bottom: 41%;
+  }
+}

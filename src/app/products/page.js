@@ -1,28 +1,54 @@
-'use client'
-import { CallUsNow, FaqSection } from "../components/shared"
-import FilterMenu from "./FilterMenu"
-import ProductCards from "./ProductCards"
-import RadioForNotes from "./RadioForNotes"
-import { Flex } from "@chakra-ui/react"
+import { CallUsNow, FaqSection, SingleImageText } from "../components/shared";
+import FilterMenu from "./FilterMenu";
+import ProductCards from "./ProductCards";
+import RadioForNotes from "./RadioForNotes";
+import { Flex, Box } from "@chakra-ui/react";
+import { getPerfumes } from "../../../utils/supabase/dataActions";
+
+export default async function Products({ searchParams }) {
+  const params = await searchParams;
+  const page = parseInt(params.page) || 1;
+  const sort = params.sort || null;
 
 
+  const { data: perfumes, total } = await getPerfumes({
+    gender: params.gender || null,
+    brand: params.brand || null,
+    minPrice: params.minPrice || null,
+    maxPrice: params.maxPrice || null,
+    note: params.note || null,
+    sale: params.sale || null,
+    page,
+    perPage: 12,
+    sort,
+  });
+console.log(perfumes, "perfumes");
 
 
-const Products = () => {
+  return (
+    <div>
+      <SingleImageText section={"products"} img="/headerImages/product.webp" />
+      <Flex
+        mt={{ base: "0px", md: "40px" }}
+        px={{ base: "15px", md: "30px", xl: "50px" }}
+        gap="50px"
+        flexDir="column"
+        justify={"center"}
+        align={"start"}
+        pb="120px"
+      >
+        <RadioForNotes />
+        <Flex gap="15px" align="start">
 
-    return (
-        <>
-        <Flex mt="40px" px="82px" gap="100px" flexDir="column" justify={"center"} align={"baseline"} pb="120px">
-            <RadioForNotes/>
-            <Flex gap="15px">
+          <Box display={{ base: "none", lg: "flex" }}>
             <FilterMenu />
-            <ProductCards />
-            </Flex>
+          </Box>
+     
+          <ProductCards products={perfumes} currentPage={page} total={total} />
         </Flex>
-        <CallUsNow/>
-        <FaqSection/>
-        </>
-    )
+      </Flex>
+      <CallUsNow />
+      <FaqSection />
+    </div>
+  );
 }
-
-export default Products

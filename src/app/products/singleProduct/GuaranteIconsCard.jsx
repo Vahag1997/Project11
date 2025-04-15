@@ -1,47 +1,115 @@
-import { Box, Flex, Heading, Text } from '@chakra-ui/react'
-import { TruckIcon, OriginalIcon, HandsIcon } from './icons/SingleProductIcons'
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { TruckIcon, OriginalIcon, HandsIcon } from "./icons/SingleProductIcons";
+import { getTranslations } from "next-intl/server";
 
 
-const GuaranteIconsCard = () => {
+const GuaranteIconsCard = async () => {
 
-    return (
-        <Flex mt="50px" flexDir={"column"} gap="70px">
-            <Flex
-                gap="20px"
-                justify="center"
-                w="50dvw"
-                minH="160px"
-                justifyContent="space-between"
-                align={"baseline"}
-                background={"#F5F5F5"}
-                px={"70px"}
-                py={"15px"}
-            >
-                <Flex flexDir={"column"} align={"center"} gap="15px" justify={"space-between"}>
-                    <TruckIcon />
-                    <Text>FREE DELIVERY</Text>
-                </Flex>
-                <Flex flexDir={"column"} align={"center"} gap="15px" justify={"space-between"}>
-                    <OriginalIcon />
-                    <Text>100% ORIGINAL</Text>
-                </Flex>
-                <Flex flexDir={"column"} align={"center"} gap="15px" justify={"space-between"}>
-                    <HandsIcon />
-                    <Text>PAY ON DELIVERY</Text>
-                </Flex>
-            </Flex>
-            <Flex flexDir={"column"} gap={"30px"}>
-                <Heading fontWeight={800} fontSize="30px" lineHeight="39px" px={"40px"}>DESCRIPTION</Heading>
-                <Box background={"#F5F5F5"} px={"40px"} py={"25px"} w="70dvw">
-                    <Text fontWeight={400} fontSize="25px" lineHeight="31px" letterSpacing="0.06em">
-                        More details of the product here for example lorem ipsum more details of the product here for example lorem ipsum more details of the product here for example lorem.
-                        more details of the product here for example lorem ipsum more details of the product here for example lorem ipsum more details of the product here for example lorem .
-                        more details of the product here for example lorem ipsum more details of the product here for example lorem ipsum more details of the product here for example lorem . more details of the product here for example lorem ipsum more details of the product here for example lorem ipsum more details of the product here for example lorem more details of the product here for example lorem ipsum more details of the product here for example lorem ipsum more details of the product here for example lorem more details of the product here for example lorem ipsum more details of the product here for example lorem ipsum more details of the product here for example lorem
-                    </Text>
-                </Box>
-            </Flex>
+const t = await getTranslations("Guarante");
+  return (
+    <Flex flexDir="column" gap={{ base: "20px", md: "50px", lg: "70px" }}>
+      <Flex
+        gap={{ base: "10px", md: "15px", lg: "20px" }}
+        justify="center"
+        minH={{ base: "80px", md: "140px", lg: "160px" }}
+        align="baseline"
+        boxShadow="md"
+        background="#F5F5F5"
+        borderRadius="10px"
+        px="20px"
+        py={{ base: "8px", md: "20px", lg: "25px" }}
+        flexWrap={{ base: "wrap", md: "nowrap" }}
+      >
+        <Flex
+          flexDir="column"
+          align="center"
+          gap="10px"
+          justify="center"
+          flex="1"
+        >
+          <TruckIcon />
+          <Text
+            fontSize={{ base: "10px", md: "16px", lg: "18px" }}
+            fontWeight={500}
+          >
+           {t("freeDelivery")}
+          </Text>
         </Flex>
-    )
-}
+        <Flex
+          flexDir="column"
+          align="center"
+          gap="10px"
+          justify="center"
+          flex="1"
+        >
+          <OriginalIcon />
+          <Text
+            fontSize={{ base: "10px", md: "16px", lg: "18px" }}
+            fontWeight={500}
+          >
+          {t("100Original")}
+          </Text>
+        </Flex>
+        <Flex
+          flexDir="column"
+          align="center"
+          gap="10px"
+          justify="center"
+          flex="1"
+        >
+          <HandsIcon />
+          <Text
+            fontSize={{ base: "10px", md: "16px", lg: "18px" }}
+            fontWeight={500}
+          >
+           {t("payOnDelivery")}
+          </Text>
+        </Flex>
+      </Flex>
 
-export default GuaranteIconsCard
+      <Flex
+        flexDir="column"
+        gap={{ base: "10px", md: "20px" }}
+        borderRadius="10px"
+        boxShadow="md"
+      >
+        <Heading
+          fontWeight={800}
+          fontSize={{ base: "22px", md: "26px", lg: "30px" }}
+          lineHeight={{ base: "28px", md: "34px", lg: "39px" }}
+          px={{ base: "20px", md: "30px", lg: "40px" }}
+        >
+         {t("description")}
+        </Heading>
+        <Box
+          background="#F5F5F5"
+          px={{ base: "20px", md: "30px", lg: "40px" }}
+          py={{ base: "15px", md: "20px", lg: "25px" }}
+        >
+          <Text
+            fontWeight={400}
+            fontSize={{ base: "16px", md: "20px", lg: "25px" }}
+            lineHeight={{ base: "24px", md: "28px", lg: "31px" }}
+            letterSpacing="0.06em"
+          >
+            More details of the product here for example lorem ipsum more
+            details of the product here for example lorem ipsum more details of
+            the product here for example lorem. More details of the product here
+            for example lorem ipsum more details of the product here for example
+            lorem ipsum more details of the product here for example lorem. More
+            details of the product here for example lorem ipsum more details of
+            the product here for example lorem ipsum more details of the product
+            here for example lorem. More details of the product here for example
+            lorem ipsum more details of the product here for example lorem ipsum
+            more details of the product here for example lorem. More details of
+            the product here for example lorem ipsum more details of the product
+            here for example lorem ipsum more details of the product here for
+            example lorem.
+          </Text>
+        </Box>
+      </Flex>
+    </Flex>
+  );
+};
+
+export default GuaranteIconsCard;

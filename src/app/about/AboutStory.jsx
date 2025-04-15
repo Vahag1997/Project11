@@ -1,82 +1,130 @@
-import { Box, Heading, Flex, Text, Button } from "@chakra-ui/react"
+import { Box, Heading, Flex, Text, Button, Icon } from "@chakra-ui/react";
 import { FiPhone } from "react-icons/fi";
-import { Icon } from "@chakra-ui/react";
-import Image from "next/image"
+import { HeadingForHome } from "../components/shared";
+import Image from "next/image";
+import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 
-const AboutStory = () => {
+export default async function AboutStory() {
+  
+  const t = await getTranslations("AboutStory");
 
-    return (
-        <Box textAlign="center">
-            <Heading
-            fontWeight={600}
-            lineHeight="80px"
-            fontSize="50px"
-            >
-                Our Story
-            </Heading>
-            <Flex
-                direction={{ base: "column", md: "row" }}
-                px="155px"
-                mt="67px"
-                mb="50px"
-                gap={10}
-                align="stretch"
-                justify="space-between"
-                minH="520px">
-
-                <Box flex="1" display="flex" alignItems="stretch">
-                    <Image
-                        src={"https://s3-alpha-sig.figma.com/img/5a20/6df7/6ce6fdffc93a7a606c2131c069c8200e?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Af8IcXT7DubpJNEAsAY0Z0p19gHdEWhgZVAugBscaRk74wVKzxjT3uWs2wbTR8MlUugRo8xPv1oiXU54oA2rJzD0M1jN4mGEoLavJjpiYciEjBOSF6wRlGL8~E1Z2VaEmCHCI5-f0DXxi-m6zHnjEEuStAfAQ2PqFwP1vSZz5eIXCvw1-572iz3QnVSe~955ZDmPZ58hjzzEhHNurr7d~tDm9~uvO94m9wSbUsv5QrwXUCzoOLW0zfU121MBWE~MAZZR2~uf83wWSNN-etYOcgVPBCQ1LM-uAtEUAlF1U3aGQGhTymN52sYWYzQE8ULNLOuP5b8mQrHllKfInqMj5g__"}
-                        alt="Story image"
-                        width={800}
-                        height={650}
-                        objectFit="cover"
-                        unoptimized
-                    />
-                </Box>
-                <Flex
-                    flex="1"
-                    flexDir="column"
-                    justify="space-between"
-                    gap="15px"
-                >
-                    <Text
-                        mt="100px"
-                        fontSize="25px"
-                        fontWeight={400}
-                        lineHeight="25px"
-                        textAlign="left">
-                        Founded with a love for perfumes, Narfum has grown into a
-                        trusted name in the fragrance world. We carefully curate a
-                        selection of the finest scents to offer something for everyone.
-                        From timeless classics to modern creations, we are here to help
-                        you find the fragrance that feels like you</Text>
-                    <Flex flexDir="column" gap="40px">
-                        <Button
-                            width="220px"
-                            height="70px"
-                            background="#0E623E"
-                            borderRadius="50px">
-                            <Text
-                                fontSize="25px"
-                                fontWeight={400}
-                                lineHeight="25px"
-                            >View Offers</Text></Button>
-
-                        <Flex gap="30px">
-                            <Button width="70px" height="70px" borderRadius="33px" background="#0E623E">
-                                <Icon fontSize="35px"><FiPhone />
-                                </Icon></Button>
-                            <Flex flexDir="column" justify="space-between" align="baseline">
-                                <Text fontSize="22px" lineHeight="30px">Call Us</Text>
-                                <Text fontSize="22px" lineHeight="30px" color="#7A7A7A">+1 (234) 567 890 00</Text>
-                            </Flex>
-                        </Flex>
-                    </Flex>
-                </Flex>
-            </Flex>
+  return (
+    <Box
+      textAlign="center"
+      px={{ base: "16px", md: "32px", lg: "64px" }}
+      py={{ base: "10px", md: "60px", lg: "80px" }}
+      bg="gray.50"
+    >
+      <HeadingForHome
+        theme="dark"
+        heading={t("contactHeading")}
+        text={t("contactText")}
+        mb={{ base: 4, md: 10 }}
+      />
+      <Flex
+        direction={{ base: "column", xl: "row" }}
+        gap={{ base: 2, md: 4 }}
+        align="stretch"
+        justify="center"
+        minH="520px"
+      >
+        {/* Image Section */}
+        <Box
+          flex={{ base: "none", md: "1" }}
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+          height="35vw"
+        >
+          <Image
+            src="/aboutImage/aboutPage.webp"
+            alt={t("imageAlt")}
+            width={600}
+            height={500}
+            objectFit="cover"
+            priority
+            unoptimized
+            style={{ objectFit: "cover", width: "100%", height: "100%" }}
+          />
         </Box>
-    )
-}
 
-export default AboutStory
+        {/* Content Section */}
+        <Flex
+          flex="1"
+          direction="column"
+          gap={{ base: 4, md: 6 }}
+          justify="space-around"
+          align={{ base: "center", md: "flex-start" }}
+        >
+          <Flex flexDir="column" gap="30px">
+            <Heading
+              fontWeight="bold"
+              lineHeight={{ base: "48px", md: "72px" }}
+              fontSize={{ base: "32px", md: "58px" }}
+              textAlign={{ base: "center", md: "left" }}
+            >
+              {t("ourStory")}
+            </Heading>
+
+            <Text
+              fontSize={{ base: "16px", md: "25px" }}
+              fontWeight="400"
+              lineHeight={{ base: "28px", md: "35px" }}
+              textAlign={{ base: "center", md: "left" }}
+              color="gray.600"
+            >
+              {t("storyText")}
+            </Text>
+          </Flex>
+
+          <Flex
+            direction={{ base: "row", md: "column" }}
+            gap="6"
+            align={{ base: "center", md: "flex-start" }}
+          >
+            <Button
+              as={Link}
+              href="/products"
+              minW={{ base: "100px", md: "150px", xl: "220px" }}
+              height={{ base: "45px", md: "55px", xl: "65px" }}
+              background="#0E623E"
+              color="white"
+              borderRadius="full"
+              _hover={{ bg: "green.800" }}
+            >
+              <Text fontSize={{ base: "16px", md: "25px" }} fontWeight="500">
+                {t("viewOffers")}
+              </Text>
+            </Button>
+
+            <Flex gap="4" align="center">
+              <Button
+                as="a"
+                href="tel:+37494997884"
+                width={{ base: "45px", md: "55px", xl: "65px" }}
+                height={{ base: "45px", md: "55px", xl: "65px" }}
+                borderRadius="50%"
+                background="#0E623E"
+                _hover={{ background: "#0C5633" }}
+              >
+                <Icon fontSize="35px">
+                  <FiPhone />
+                </Icon>
+              </Button>
+
+              <Flex direction="column" align="baseline">
+                <Text fontSize={{ base: "12px", md: "22px" }} fontWeight="500">
+                  {t("callUs")}
+                </Text>
+                <Text fontSize={{ base: "12px", md: "22px" }} color="gray.500">
+                  +374 (949) 997-884
+                </Text>
+              </Flex>
+            </Flex>
+          </Flex>
+        </Flex>
+      </Flex>
+    </Box>
+  );
+}

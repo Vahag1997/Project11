@@ -1,87 +1,103 @@
 .testimonialContainer {
-    position: relative;
-    background-color: #ffffff;
-    padding: 60px 190px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .headingSection {
-    margin-bottom: 20px;
-  }
-  
-  .heading {
-    font-size: 2.5rem;
-    color: #fff;
-    margin: 0;
-  }
-  
-  .subheading {
-    font-size: 1.2rem;
-    color: #ccc;
-  }
-  
-  .swiperWrapper {
-    position: unset;
-    width: 100%;
-    max-width: 1699px;
-  }
-  
-  .swiper {
-    position: unset;
-    width: 100%;
-    height: auto;
-  }
-  
-  .swiperSlide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F7F6FB;
-    border-radius: 20px;
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
-    font-size: 1rem;
-    /* color: #000; */
-    min-height: 330px;
-  }
-  
-  .productCard {
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-  
+  position: relative;
+  background-color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.headingSection {
+  margin-bottom: 20px;
+}
+
+.heading {
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 0;
+}
+
+.subheading {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.swiperWrapper {
+  position: unset;
+  width: 100%;
+  max-width: 1699px;
+}
+
+.swiper {
+  position: unset;
+  width: 100%;
+  height: auto;
+  background-color: none;
+}
+
+.swiperSlide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 1rem;
+  min-height: 160px;
+  margin-right: 40px;
+}
+
+.productCard {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.customNextButton,
+.customPrevButton {
+  position: absolute;
+  bottom: 37%;
+  transform: translateY(-50%);
+  z-index: 10;
+  color: #0e0e0e;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 767px) {
   .customNextButton,
   .customPrevButton {
-    position: absolute;
-    bottom: 25%;
-    transform: translateY(-50%);
-    z-index: 10;
-    color: #0e0e0e;
-    background-color: transparent;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    font-size: 1rem;
+    width: 30px;
+    height: 30px;
+    bottom: 32%;
   }
-  
-  
-  
+  .customNextButton {
+    right: 2%;
+  }
   .customPrevButton {
-    left: 85px;
+    left: 2%;
+  }
+  .testimonialContainer{
+    gap: 5px;
+  }
+}
+@media (min-width: 768px) {
+  .customPrevButton {
+    left: 1%;
   }
   
   .customNextButton {
-    right: 85px;
+    right: 1%;
   }
-  
+  .testimonialContainer{
+    gap: 20px;
+  }
+}

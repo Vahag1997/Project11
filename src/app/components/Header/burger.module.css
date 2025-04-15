@@ -1,0 +1,37 @@
+@media (min-width: 768px) {
+  .isDesktop {
+    display: block;
+  }
+  .isMobile {
+    display: none;
+  }
+  .arrowIcons {
+    font-size: 4.2rem !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .isDesktop {
+    display: none;
+  }
+  .navDisplay {
+    display: none;
+  }
+  .isMobile {
+    display: block;
+  }
+  .arrowIcons {
+    font-size: 1.8rem !important;
+  }
+}
+
+.mainHeaderComponent {
+  position: relative;
+}
+
+.prevButton,
+.nextButton {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}

@@ -1,4 +1,6 @@
-import { Box, Icon, Image } from "@chakra-ui/react";
+"use client";
+import React from "react";
+import { Box, Icon, Image, useBreakpointValue } from "@chakra-ui/react";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -9,9 +11,11 @@ import styles from './fragnance.module.css'
 
 
 const FragranceCarousel = () => {
+  
+   const slidesPerView = useBreakpointValue({ base: 2, md: 4 });
 
   return (
-    <Box textAlign="center" py={12} pos="relative" px="190px">
+    <Box textAlign="center" py={{base:6,md:12}} pos="relative" px={{base:"10px", md:"60px", xl:"90px"}}>
       <HeadingForHome
         heading={"Experience Our Fragrances in Motion"}
         text={"Dive into the essence of our perfumes with immersive videos that bring each scent to life"}
@@ -19,8 +23,8 @@ const FragranceCarousel = () => {
 
 
       <Swiper
-        slidesPerView={3}
-        spaceBetween={40}
+        slidesPerView={slidesPerView === 4 ? 3 : 2}
+        spaceBetween={slidesPerView === 2 ? 8 : 20}
         modules={[Navigation]}
         navigation={{
           nextEl: `.${styles.customNextButton}`,
@@ -30,17 +34,17 @@ const FragranceCarousel = () => {
       >
         {ARRAY.map((_, idx) => {
           return (
-            <SwiperSlide className={styles.swiperSlide} key={idx}>
-              <Box borderRadius="md" overflow="hidden">
+            <SwiperSlide className={styles.swiperSlideFregnance} key={idx}>
+              <Box borderRadius="md" overflow="hidden" height={{base:"140px", md:"250px", xl:"350px"}}>
                 <Image
                   alt="Parfume 1"
-                  src="https://s3-alpha-sig.figma.com/img/86c4/59c3/256dc27162dff1df74547f9a4f583129?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NVJFgCh0nW69BGdRqwIObFD5EfScn5PnZOOAO6FwXSvkWzSwUU4-UxrcMuu-QVnSwdMu4CRV1rxTeVFHEL5JFePYWyIcVttwhMWL08ttB63FkWoE5FMF57NfcrOQ7UIM7CMHIhzHQBpoyzWbAv5igB1JGLc6dlz5dzQxrCLCSLFY1Ys9VdyktHXDg57W-PBHoL5cv0XSbNyHQ6tCWWL9G9N74jndZ5bVgPt5~1Ntv87oxQbvtFWeCKoSJDWNwBJzAEnE2Sq2GWsJ-lVc~nvZ0RJ4rW0wmX9i6rxX9YmKvOBtCeLivcI6AR3YYcNW~jnqjc6OAdXXhwfrsmSuR-Eacg__"
+                  src="https://s3-alpha-sig.figma.com/img/86c4/59c3/256dc27162dff1df74547f9a4f583129?Expires=1740355200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=DFElmkJhw4YC-SpewDbPjRujR8PTGhizJ-TNbSKE1GYbTHyGY29QDnCGAIeufWOxkADCYZdfsSkDPz9HXgyfCgxYsHzX0OHIIBbbPtBjv5qb6ivEe4-plftcBYheCAyzhq1d40e-it0XvgESSV6J1GGcyMWNA5Gjl4PgVizVcjtqrPQPBcWrdEwZnpug181-beeCQagzjSCe4po-3-K0FhMLepYkvI1zfFwmw9f8AajimWIF66pa0F3vT539yl6csSfMl1QkKQsm5mnmyGPShfXuAVct3chEeyA5WRdXB5XfDBcSvwjGY6A2K81WuY77pstm4Kop5v5rkD3KG5xzFQ__"
                   objectFit="cover"
                   border="3px solid white"
                   borderRadius="20px"
                   width={400}
-                  height={250}
-                  style={{ objectFit: "cover", width: "100%", minHeight: "400px" }}
+                  height={400}
+                  style={{ objectFit: "cover", maxWidth: "100%", maxHeight:"100%"}}
                   unoptimized
                 />
                 
